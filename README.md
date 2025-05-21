@@ -2,7 +2,7 @@
 Anggota:
 1. Fahmi Putra Dendi (3027)
 2. Mohammad Wildan Alqori'in (3063)
-3. Faiz Ulfia Sasmita (3084
+3. Faiz Ulfia Sasmita (3084)
 
 # FITUR:
 Projek ini akan membantu pendataan stok bahan-bahan yang digunakan selama hari kerja. Fiturnya antara lain:
