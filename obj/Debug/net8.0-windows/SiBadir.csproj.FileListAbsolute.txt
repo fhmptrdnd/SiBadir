@@ -1,0 +1,16 @@
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.exe
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.deps.json
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.runtimeconfig.json
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.pdb
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form1.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.GenerateResource.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.AssemblyInfoInputs.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.AssemblyInfo.cs
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.CoreCompileInputs.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\refint\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.pdb
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.genruntimeconfig.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\ref\SiBadir.dll
