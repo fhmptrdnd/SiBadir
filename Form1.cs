@@ -1,11 +1,10 @@
 using Npgsql;
+using SiBadir.Model;
 
 namespace SiBadir
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=d1naraFahmi;Database=Si_Badir";
-
         public Form1()
         {
             InitializeComponent();
@@ -24,50 +23,32 @@ namespace SiBadir
 
             try
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
+                // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd, bisa dicomment
+                MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
+
+                DatabaseConnectionUser login = new DatabaseConnectionUser(usernameInput, passwordInput);
+                login.openConnection();
+                NpgsqlDataReader reader = login.execQuery();
+
+                if (reader.Read())
                 {
-                    conn.Open();
+                    string namaUser = reader["nama_User"].ToString() ?? "";
+                    string role = reader["role"].ToString() ?? "";
 
-                    // Query
-                    string query = @"
-                        select p.nama_User, p.role 
-                        from user_login ul
-                        join Pengguna p using (id_User)
-                        WHERE LOWER(ul.username) = @username AND ul.password = @password";
-
-
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    if (role == "admin")
                     {
-
-                        cmd.Parameters.Add(new NpgsqlParameter("@username", NpgsqlTypes.NpgsqlDbType.Varchar) { Value = usernameInput });
-                        cmd.Parameters.Add(new NpgsqlParameter("@password", NpgsqlTypes.NpgsqlDbType.Varchar) { Value = passwordInput });
-
-                        // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd, bisa dicomment
-                        MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
-
-                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                string namaUser = reader["nama_User"].ToString();
-                                string role = reader["role"].ToString();
-
-                                if (role == "admin")
-                                {
-                                    label1.Text = "Halo Admin!";
-                                }
-                                else if (role == "karyawan")
-                                {
-                                    label1.Text = $"Halo {namaUser}!";
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Username atau password salah!", "Gagal Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                        }
+                        label1.Text = "Halo Admin!";
+                    }
+                    else if (role == "karyawan")
+                    {
+                        label1.Text = $"Halo {namaUser}!";
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Username atau password salah!", "Gagal Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                login.closeConnection();
             }
             catch (Exception ex)
             {
