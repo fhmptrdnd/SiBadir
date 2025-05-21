@@ -33,3 +33,38 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.AssemblyReference.cache
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.Up2Date
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\SiBadir.exe
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\SiBadir.deps.json
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\SiBadir.runtimeconfig.json
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\SiBadir.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\SiBadir.pdb
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Npgsql.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.AssemblyReference.cache
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Form1.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Properties.Resources.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.GenerateResource.cache
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.GeneratedMSBuildEditorConfig.editorconfig
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.AssemblyInfoInputs.cache
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.AssemblyInfo.cs
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.CoreCompileInputs.cache
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.sourcelink.json
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.Up2Date
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.dll
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\refint\SiBadir.dll
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.pdb
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.genruntimeconfig.cache
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\ref\SiBadir.dll
