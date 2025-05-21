@@ -53,12 +53,14 @@
             label1.Size = new Size(24, 25);
             label1.TabIndex = 1;
             label1.Text = "...";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(593, 498);
             textBox1.Name = "textBox1";
+            textBox1.PasswordChar = '*';
             textBox1.PlaceholderText = "Password";
             textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 2;
@@ -87,7 +89,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Si Badir";
-            //Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
