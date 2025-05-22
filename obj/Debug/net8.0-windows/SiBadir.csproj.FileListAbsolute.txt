@@ -3,7 +3,6 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.runtimeconfig.json
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.dll
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\SiBadir.pdb
-C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form1.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.GenerateResource.cache
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.AssemblyInfoInputs.cache
@@ -68,3 +67,8 @@ C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\refint\SiBadir.d
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.pdb
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.genruntimeconfig.cache
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\ref\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\NetTopologySuite.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\NetTopologySuite.IO.PostGis.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\Npgsql.NetTopologySuite.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Login.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Menu.resources

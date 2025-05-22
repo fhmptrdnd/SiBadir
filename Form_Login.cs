@@ -3,9 +3,9 @@ using SiBadir.Model;
 
 namespace SiBadir
 {
-    public partial class Form1 : Form
+    public partial class Form_Login : Form
     {
-        public Form1()
+        public Form_Login()
         {
             InitializeComponent();
         }
@@ -23,8 +23,8 @@ namespace SiBadir
 
             try
             {
-                // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd, bisa dicomment
-                MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
+                // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd yg diinpput, bisa dicomment
+                //MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
 
                 DatabaseConnectionUser login = new DatabaseConnectionUser(usernameInput, passwordInput);
                 login.openConnection();
@@ -38,6 +38,11 @@ namespace SiBadir
                     if (role == "admin")
                     {
                         label1.Text = "Halo Admin!";
+                        // Sembunyikan Form1 dan tampilkan Form2
+                        this.Hide();
+                        Form_Menu form2 = new Form_Menu();
+                        form2.FormClosed += (s, args) => this.Close(); // Tutup aplikasi jika Form2 ditutup
+                        form2.Show();
                     }
                     else if (role == "karyawan")
                     {
