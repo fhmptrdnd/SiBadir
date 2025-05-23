@@ -110,7 +110,7 @@ namespace SiBadir
             Controls.Add(Pilih_Menu);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form_Menu";
-            Text = "Form2";
+            Text = "Menu";
             ResumeLayout(false);
             PerformLayout();
         }
