@@ -26,9 +26,12 @@ namespace SiBadir
                 // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd yg diinpput, bisa dicomment
                 //MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
 
-                DatabaseConnectionUser login = new DatabaseConnectionUser(usernameInput, passwordInput);
-                login.openConnection();
-                NpgsqlDataReader reader = login.execQuery();
+                //DatabaseConnectionUser login = new DatabaseConnectionUser(usernameInput, passwordInput);
+                //login.openConnection();
+                //NpgsqlDataReader reader = login.execQuery();
+
+                IUserRepository userRepo = new DatabaseConnectionUser();
+                using (var reader = userRepo.GetUser(usernameInput, passwordInput))
 
                 if (reader.Read())
                 {
@@ -53,7 +56,7 @@ namespace SiBadir
                 {
                     MessageBox.Show("Username atau password salah!", "Gagal Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                login.closeConnection();
+                //login.closeConnection();
             }
             catch (Exception ex)
             {
