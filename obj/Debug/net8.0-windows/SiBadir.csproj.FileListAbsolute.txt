@@ -53,7 +53,6 @@ C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Npgsql.dll
 C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.AssemblyReference.cache
-C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Form1.resources
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Properties.Resources.resources
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.csproj.GenerateResource.cache
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.GeneratedMSBuildEditorConfig.editorconfig
@@ -72,3 +71,11 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\bin\Debug\net8.0-windows\Npgsql.NetTopologySuite.dll
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Login.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Menu.resources
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\NetTopologySuite.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\NetTopologySuite.IO.PostGis.dll
+C:\coolyeah\pbo\perojek\project007_sln\bin\Debug\net8.0-windows\Npgsql.NetTopologySuite.dll
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Form_Login.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Form_Menu.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.MainMenu.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.FormMenuKaryawan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.View.TambahKaryawan.resources

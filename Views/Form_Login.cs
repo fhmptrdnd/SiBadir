@@ -1,5 +1,6 @@
 using Npgsql;
 using SiBadir.Model;
+using SiBadir.Repositories;
 
 namespace SiBadir
 {
@@ -30,15 +31,14 @@ namespace SiBadir
                 //login.openConnection();
                 //NpgsqlDataReader reader = login.execQuery();
 
-                IUserRepository userRepo = new DatabaseConnectionUser();
-                using (var reader = userRepo.GetUser(usernameInput, passwordInput))
+                PenggunaRepository penggunaRepo = new PenggunaRepository();
+                Pengguna akun = penggunaRepo.GetByUsernameAndPassword(usernameInput, passwordInput);
 
-                if (reader.Read())
+                if (akun != null)
                 {
-                    string namaUser = reader["nama_User"].ToString() ?? "";
-                    string role = reader["role"].ToString() ?? "";
+                    User.UserLoggedIn = akun;
 
-                    if (role == "admin")
+                    if (akun.Role == "admin")
                     {
                         label1.Text = "Halo Admin!";
                         // Sembunyikan Form1 dan tampilkan Form2
@@ -47,16 +47,15 @@ namespace SiBadir
                         form2.FormClosed += (s, args) => this.Close(); // Tutup aplikasi jika Form2 ditutup
                         form2.Show();
                     }
-                    else if (role == "karyawan")
+                    else if (akun.Role == "karyawan")
                     {
-                        label1.Text = $"Halo {namaUser}!";
+                        label1.Text = $"Halo {akun.NamaUser}!";
                     }
                 }
                 else
                 {
                     MessageBox.Show("Username atau password salah!", "Gagal Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                //login.closeConnection();
             }
             catch (Exception ex)
             {

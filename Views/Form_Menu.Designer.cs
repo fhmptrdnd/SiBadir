@@ -35,25 +35,26 @@ namespace SiBadir
             bt_Daftar_Karyawan = new Button();
             bt_Lht_Stok_Bahan = new Button();
             bt_History = new Button();
-            button1 = new Button();
+            Btn_keluar = new Button();
+            Greeting = new Label();
             SuspendLayout();
             // 
             // Pilih_Menu
             // 
             Pilih_Menu.AutoSize = true;
             Pilih_Menu.BackColor = Color.Transparent;
-            Pilih_Menu.Font = new Font("Argentum Sans SemiBold", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Pilih_Menu.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Pilih_Menu.ForeColor = SystemColors.ButtonHighlight;
-            Pilih_Menu.Location = new Point(566, 115);
+            Pilih_Menu.Location = new Point(590, 119);
             Pilih_Menu.Name = "Pilih_Menu";
-            Pilih_Menu.Size = new Size(237, 52);
+            Pilih_Menu.Size = new Size(187, 39);
             Pilih_Menu.TabIndex = 0;
             Pilih_Menu.Text = "Pilih Menu";
             Pilih_Menu.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // bt_Daftar_Karyawan
             // 
-            bt_Daftar_Karyawan.Font = new Font("Argentum Sans", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bt_Daftar_Karyawan.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_Daftar_Karyawan.ForeColor = Color.Black;
             bt_Daftar_Karyawan.Location = new Point(504, 207);
             bt_Daftar_Karyawan.Name = "bt_Daftar_Karyawan";
@@ -61,10 +62,11 @@ namespace SiBadir
             bt_Daftar_Karyawan.TabIndex = 1;
             bt_Daftar_Karyawan.Text = "Daftar Karyawan";
             bt_Daftar_Karyawan.UseVisualStyleBackColor = true;
+            bt_Daftar_Karyawan.Click += bt_Daftar_Karyawan_Click;
             // 
             // bt_Lht_Stok_Bahan
             // 
-            bt_Lht_Stok_Bahan.Font = new Font("Argentum Sans", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bt_Lht_Stok_Bahan.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_Lht_Stok_Bahan.ForeColor = Color.Black;
             bt_Lht_Stok_Bahan.Location = new Point(504, 301);
             bt_Lht_Stok_Bahan.Name = "bt_Lht_Stok_Bahan";
@@ -72,10 +74,11 @@ namespace SiBadir
             bt_Lht_Stok_Bahan.TabIndex = 2;
             bt_Lht_Stok_Bahan.Text = "Lihat Stok Bahan";
             bt_Lht_Stok_Bahan.UseVisualStyleBackColor = true;
+            bt_Lht_Stok_Bahan.Click += bt_Lht_Stok_Bahan_Click;
             // 
             // bt_History
             // 
-            bt_History.Font = new Font("Argentum Sans", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bt_History.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_History.ForeColor = Color.Black;
             bt_History.Location = new Point(504, 398);
             bt_History.Name = "bt_History";
@@ -84,26 +87,39 @@ namespace SiBadir
             bt_History.Text = "History";
             bt_History.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Btn_keluar
             // 
-            button1.Font = new Font("Argentum Sans", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Brown;
-            button1.Location = new Point(600, 527);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 43);
-            button1.TabIndex = 4;
-            button1.Text = "Keluar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Btn_keluar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Btn_keluar.ForeColor = Color.Brown;
+            Btn_keluar.Location = new Point(600, 527);
+            Btn_keluar.Name = "Btn_keluar";
+            Btn_keluar.Size = new Size(163, 43);
+            Btn_keluar.TabIndex = 4;
+            Btn_keluar.Text = "Keluar";
+            Btn_keluar.UseVisualStyleBackColor = true;
+            Btn_keluar.Click += BtnKeluar_click;
+            // 
+            // Greeting
+            // 
+            Greeting.AutoSize = true;
+            Greeting.BackColor = Color.Transparent;
+            Greeting.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
+            Greeting.ForeColor = SystemColors.Control;
+            Greeting.Location = new Point(542, 70);
+            Greeting.Name = "Greeting";
+            Greeting.Size = new Size(275, 39);
+            Greeting.TabIndex = 5;
+            Greeting.Text = "Selamat Datang";
             // 
             // Form_Menu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1330, 700);
-            Controls.Add(button1);
+            Controls.Add(Greeting);
+            Controls.Add(Btn_keluar);
             Controls.Add(bt_History);
             Controls.Add(bt_Lht_Stok_Bahan);
             Controls.Add(bt_Daftar_Karyawan);
@@ -121,6 +137,7 @@ namespace SiBadir
         private Button bt_Daftar_Karyawan;
         private Button bt_Lht_Stok_Bahan;
         private Button bt_History;
-        private Button button1;
+        private Button Btn_keluar;
+        private Label Greeting;
     }
 }
