@@ -84,3 +84,7 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.MainMenu.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.FormAddEditBahan.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.View.FormAddEditBahan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.BaseMenuHistory.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.FormHistoryStok.resources
