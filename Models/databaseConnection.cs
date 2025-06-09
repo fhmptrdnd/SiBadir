@@ -5,7 +5,7 @@
 
 //public class DbNjedir
 //{
-//    private readonly string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=BaksoNjedir";
+//    private readonly string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=Si_Badir_New";
 
 
 //    public void Insert(string namaTable, string[] columns, object[] values)
@@ -181,5 +181,5 @@
 ////    //            return reader;
 ////    //        }
 ////    //    }
-////    //}
+////}
 ////}

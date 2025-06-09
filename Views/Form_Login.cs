@@ -1,6 +1,7 @@
 using Npgsql;
 using SiBadir.Model;
 using SiBadir.Repositories;
+using System.Windows.Forms;
 
 namespace SiBadir
 {
@@ -44,6 +45,7 @@ namespace SiBadir
                         // Sembunyikan Form1 dan tampilkan Form2
                         this.Hide();
                         Form_Menu form2 = new Form_Menu();
+                        //form2.LoggedInUsername = akun.NamaUser;
                         form2.FormClosed += (s, args) => this.Close(); // Tutup aplikasi jika Form2 ditutup
                         form2.Show();
                     }

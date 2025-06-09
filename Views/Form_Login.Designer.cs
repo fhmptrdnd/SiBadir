@@ -77,8 +77,8 @@
             // 
             // Form1
             // 
-            //AutoScaleDimensions = new SizeF(10F, 25F); // Fahmi
-            AutoScaleDimensions = new SizeF(8F, 20F); // Wildan
+            AutoScaleDimensions = new SizeF(10F, 25F); // Fahmi
+            //AutoScaleDimensions = new SizeF(8F, 20F); // Wildan
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");

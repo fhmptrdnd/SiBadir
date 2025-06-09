@@ -32,7 +32,7 @@ namespace SiBadir.Repositories
             DatabaseRepository.Update("bahan",
             new[] { "is_active" },
             new object[] { 0 },
-                "id_user = @c0", new object[] { id });
+                "id_bahan = @c0", new object[] { id });
         }
 
         public List<Bahan> GetAll()

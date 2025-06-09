@@ -21,17 +21,19 @@ namespace SiBadir.Controller
             }
 
             // Clear kontrol yang ada di dalam panel dulu
-            //containerPanel.Controls.Clear();
+            containerPanel.Controls.Clear();
 
             // Atur properti form
-            form.TopLevel = false; // Penting: biar form bisa jadi child control
-            form.FormBorderStyle = FormBorderStyle.None; // Hilangkan border form
-            form.Dock = DockStyle.Fill; // Isi penuh panel kontainer
+            form.TopLevel = false; 
+            form.FormBorderStyle = FormBorderStyle.None; 
+            form.Dock = DockStyle.Fill; 
+
+            form.BringToFront(); 
+            containerPanel.Refresh();
 
             // Tambahkan form ke kontrol panel
             containerPanel.Controls.Add(form);
 
-            // Tampilkan form
             form.Show();
         }
 

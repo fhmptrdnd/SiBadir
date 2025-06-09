@@ -74,5 +74,10 @@ namespace SiBadir.View
                 }
             }
         }
+
+        private void TambahKaryawan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

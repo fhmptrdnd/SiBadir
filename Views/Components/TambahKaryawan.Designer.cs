@@ -39,9 +39,10 @@
             // 
             // Return_Button
             // 
-            Return_Button.Location = new Point(12, 59);
+            Return_Button.Location = new Point(120, 87);
+            Return_Button.Margin = new Padding(4);
             Return_Button.Name = "Return_Button";
-            Return_Button.Size = new Size(254, 110);
+            Return_Button.Size = new Size(211, 138);
             Return_Button.TabIndex = 5;
             Return_Button.Text = "Kembali";
             Return_Button.UseVisualStyleBackColor = true;
@@ -49,17 +50,20 @@
             // 
             // NamaKaryawanTextBox
             // 
-            NamaKaryawanTextBox.Location = new Point(477, 59);
+            NamaKaryawanTextBox.Location = new Point(554, 115);
+            NamaKaryawanTextBox.Margin = new Padding(4);
             NamaKaryawanTextBox.Name = "NamaKaryawanTextBox";
-            NamaKaryawanTextBox.Size = new Size(323, 27);
+            NamaKaryawanTextBox.Size = new Size(198, 31);
             NamaKaryawanTextBox.TabIndex = 6;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(332, 62);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(373, 119);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(117, 20);
+            label1.Size = new Size(139, 25);
             label1.TabIndex = 7;
             label1.Text = "Nama Karyawan";
             label1.Click += label1_Click;
@@ -67,26 +71,31 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(332, 104);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(373, 171);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(125, 20);
+            label2.Size = new Size(148, 25);
             label2.TabIndex = 8;
             label2.Text = "Alamat Karyawan";
             // 
             // AlamatKaryawanTextBox
             // 
-            AlamatKaryawanTextBox.Location = new Point(477, 101);
+            AlamatKaryawanTextBox.Location = new Point(554, 167);
+            AlamatKaryawanTextBox.Margin = new Padding(4);
             AlamatKaryawanTextBox.Name = "AlamatKaryawanTextBox";
-            AlamatKaryawanTextBox.Size = new Size(323, 27);
+            AlamatKaryawanTextBox.Size = new Size(198, 31);
             AlamatKaryawanTextBox.TabIndex = 9;
             // 
             // SubmitBtn
             // 
-            SubmitBtn.Location = new Point(864, 59);
+            SubmitBtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SubmitBtn.ForeColor = SystemColors.ControlText;
+            SubmitBtn.Location = new Point(799, 92);
+            SubmitBtn.Margin = new Padding(4);
             SubmitBtn.Name = "SubmitBtn";
-            SubmitBtn.Size = new Size(187, 102);
+            SubmitBtn.Size = new Size(234, 128);
             SubmitBtn.TabIndex = 10;
-            //SubmitBtn.Text = "Tambah";
             SubmitBtn.UseVisualStyleBackColor = true;
             SubmitBtn.Click += SubmitBtn_Click;
             // 
@@ -94,17 +103,19 @@
             // 
             labelMenu.AutoSize = true;
             labelMenu.Font = new Font("Arial", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMenu.Location = new Point(425, 9);
+            labelMenu.ForeColor = SystemColors.ControlLightLight;
+            labelMenu.Location = new Point(380, 20);
+            labelMenu.Margin = new Padding(4, 0, 4, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(258, 39);
+            labelMenu.Size = new Size(0, 45);
             labelMenu.TabIndex = 11;
-            //labelMenu.Text = "Menu Karyawan";
             // 
             // TambahKaryawan
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1084, 235);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(1197, 294);
             Controls.Add(labelMenu);
             Controls.Add(SubmitBtn);
             Controls.Add(AlamatKaryawanTextBox);
@@ -112,8 +123,10 @@
             Controls.Add(label1);
             Controls.Add(NamaKaryawanTextBox);
             Controls.Add(Return_Button);
+            Margin = new Padding(4);
             Name = "TambahKaryawan";
             Text = "Form1";
+            Load += TambahKaryawan_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -42,33 +42,37 @@
             sidebar.Controls.Add(button2);
             sidebar.Controls.Add(button1);
             sidebar.Location = new Point(0, 0);
+            sidebar.Margin = new Padding(4);
             sidebar.Name = "sidebar";
-            sidebar.Size = new Size(245, 700);
+            sidebar.Size = new Size(306, 875);
             sidebar.TabIndex = 0;
             // 
             // button3
             // 
-            button3.Location = new Point(0, 233);
+            button3.Location = new Point(0, 291);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
-            button3.Size = new Size(245, 45);
+            button3.Size = new Size(306, 56);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(0, 190);
+            button2.Location = new Point(0, 238);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(245, 45);
+            button2.Size = new Size(306, 56);
             button2.TabIndex = 1;
             button2.Text = "Stok Bahan";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(0, 147);
+            button1.Location = new Point(0, 184);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(245, 45);
+            button1.Size = new Size(306, 56);
             button1.TabIndex = 0;
             button1.Text = "Daftar Karyawan";
             button1.UseVisualStyleBackColor = true;
@@ -76,18 +80,20 @@
             // 
             // mainContainer
             // 
-            mainContainer.Location = new Point(245, 0);
+            mainContainer.Location = new Point(303, 0);
+            mainContainer.Margin = new Padding(4);
             mainContainer.Name = "mainContainer";
-            mainContainer.Size = new Size(1084, 700);
+            mainContainer.Size = new Size(1358, 875);
             mainContainer.TabIndex = 1;
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1330, 700);
+            ClientSize = new Size(1662, 875);
             Controls.Add(mainContainer);
             Controls.Add(sidebar);
+            Margin = new Padding(4);
             Name = "MainMenu";
             Text = "Form1";
             Load += Form1_Load;

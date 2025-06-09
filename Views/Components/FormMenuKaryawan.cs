@@ -21,31 +21,70 @@ namespace SiBadir
             binding.DataSource = MenuKaryawanController.GetDataKaryawan();
             DataKaryawan.DataSource = binding;
         }
+
+        private List<Control> originalMenuContainerControls;
         public FormMenuKaryawan()
         {
             InitializeComponent();
+
+            originalMenuContainerControls = new List<Control>();
+            foreach (Control control in MenuContainer.Controls)
+            {
+                originalMenuContainerControls.Add(control);
+            }
+            MenuContainer.Controls.Clear();
+
             LoadData();
+
+            RestoreMenuContainerControls();
+
+            Hapus_Karyawan.Click += Hapus_Karyawan_Click;
+            Edit_Karyawan.Click += Edit_Karyawan_Click;
+            Tambah_Karyawan.Click += Tambah_Karyawan_Click;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         }
 
+
         private void elementHide()
         {
-            Edit_Karyawan.Hide();
             Hapus_Karyawan.Hide();
+            Edit_Karyawan.Hide();
             Tambah_Karyawan.Hide();
             labelMenu.Hide();
         }
 
         private void elementShow()
         {
-            Edit_Karyawan.Show();
-            Hapus_Karyawan.Show();
-            Tambah_Karyawan.Show();
-            labelMenu.Show();
+            RestoreMenuContainerControls();
         }
+
+        private void RestoreMenuContainerControls()
+        {
+            MenuContainer.Controls.Clear();
+            foreach (Control control in originalMenuContainerControls)
+            {
+                if (!MenuContainer.Controls.Contains(control))
+                {
+                    MenuContainer.Controls.Add(control);
+                }
+                control.Show();
+            }
+        }
+
+        //private void btnTambahBahan_Click(object sender, EventArgs e)
+        //{
+        //    elementHide();
+        //    View.FormAddEditBahan tambahBahan = new View.FormAddEditBahan();
+        //    tambahBahan.FormClosed += (s, args) =>
+        //    {
+        //        elementShow();
+        //        LoadData();
+        //    };
+        //    SiBadir.Controller.FormController.LoadFormInPanel(this.MenuContainer, tambahBahan);
+        //}
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -58,7 +97,7 @@ namespace SiBadir
             Form tambahKaryawan = new View.TambahKaryawan();
             tambahKaryawan.FormClosed += (s, args) =>
             {
-                this.elementShow();
+                elementShow();
                 LoadData();
             };
             SiBadir.Controller.FormController.LoadFormInPanel(this.MenuContainer, tambahKaryawan);
@@ -118,7 +157,7 @@ namespace SiBadir
             else
             {
                 // Kalau nggak ada baris yang dipilih sama sekali saat tombol hapus diklik
-                MessageBox.Show("Pilih 1 Data Karyawan Untuk Dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //MessageBox.Show("Pilih 1 Data Karyawan Untuk Dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

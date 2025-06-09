@@ -79,3 +79,8 @@ C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Form_Men
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.MainMenu.resources
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.FormMenuKaryawan.resources
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.View.TambahKaryawan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormMenuKaryawan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.TambahKaryawan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.MainMenu.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.FormAddEditBahan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
