@@ -16,5 +16,6 @@ namespace SiBadir.Model
         public DateTime? TanggalPerubahan { get; set; }
         public string JenisPerubahan { get; set; }
         public string Keterangan { get; set; }
+>>>>>>>>> Temporary merge branch 2
     }
 }
