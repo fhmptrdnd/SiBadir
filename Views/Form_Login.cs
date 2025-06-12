@@ -41,7 +41,6 @@ namespace SiBadir
 
                     if (akun.Role == "admin")
                     {
-                        label1.Text = "Halo Admin!";
                         // Sembunyikan Form1 dan tampilkan Form2
                         this.Hide();
                         Form_Menu form2 = new Form_Menu();
@@ -51,7 +50,7 @@ namespace SiBadir
                     }
                     else if (akun.Role == "karyawan")
                     {
-                        label1.Text = $"Halo {akun.NamaUser}!";
+
                     }
                 }
                 else

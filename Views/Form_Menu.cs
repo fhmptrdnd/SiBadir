@@ -58,7 +58,7 @@ namespace SiBadir
 
         private void bt_History_Click(object sender, EventArgs e)
         {
-
+            SiBadir.Controller.FormController.LoadFormInPanel(this.panel1, new FormHistoryBahan());
         }
 
         private void btBack_Click(object sender, EventArgs e)

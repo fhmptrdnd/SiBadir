@@ -19,6 +19,7 @@ namespace SiBadir
         BindingSource binding = new BindingSource();
 
         private List<Control> originalMenuContainerControls;
+        private int _loggedInUserId;
 
         public FormStokBahan()
         {
@@ -31,6 +32,16 @@ namespace SiBadir
             }
             MenuContainer2.Controls.Clear();
 
+            if (User.UserLoggedIn != null)
+            {
+                _loggedInUserId = User.UserLoggedIn.IdUser;
+                MessageBox.Show($"User ID yang terbaca di FormStokBahan: {_loggedInUserId}", "Debug User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Pengguna belum login. Silakan login terlebih dahulu.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             LoadData();
 
             RestoreMenuContainerControls();
@@ -42,7 +53,7 @@ namespace SiBadir
 
         private void LoadData()
         {
-            List<Bahan> daftarBahan = StokBahanController.GetDataStokBahan();
+            List<BahanDisplay> daftarBahan = StokBahanController.GetDataStokBahan();
             binding.DataSource = daftarBahan;
             dataGridViewBahan.DataSource = binding;
 
@@ -89,12 +100,17 @@ namespace SiBadir
         private void btnTambahBahan_Click(object sender, EventArgs e)
         {
             elementHide();
-            View.FormAddEditBahan tambahBahan = new View.FormAddEditBahan();
+            View.FormAddEditBahan tambahBahan = new View.FormAddEditBahan(_loggedInUserId);
             tambahBahan.FormClosed += (s, args) =>
             {
                 elementShow();
                 LoadData();
             };
+            //FormAddEditBahan formAdd = new FormAddEditBahan(_loggedInUserId);
+            //if (formAdd.ShowDialog() == DialogResult.OK)
+            //{
+            //    LoadData();
+            //}
             SiBadir.Controller.FormController.LoadFormInPanel(this.MenuContainer2, tambahBahan);
         }
 
@@ -107,7 +123,7 @@ namespace SiBadir
 
                 if (selectedBahan != null)
                 {
-                    View.FormAddEditBahan formEdit = new View.FormAddEditBahan(selectedBahan);
+                    View.FormAddEditBahan formEdit = new View.FormAddEditBahan(selectedBahan, _loggedInUserId);
                     formEdit.FormClosed += (s, args) =>
                     {
                         elementShow();
@@ -135,9 +151,9 @@ namespace SiBadir
                     {
                         try
                         {
-                            if (StokBahanController.HapusBahan(selectedBahan.IdBahan))
+                            if (StokBahanController.HapusBahan(selectedBahan.IdBahan, _loggedInUserId))
                             {
-                                MessageBox.Show("Bahan berhasil dinonaktifkan (dihapus secara logis).", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("Bahan berhasil dinonaktifkan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 LoadData(); // Muat ulang data setelah penghapusan berhasil
                             }
                             else

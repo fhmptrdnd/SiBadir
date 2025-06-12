@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.IndianRed;
             ClientSize = new Size(1197, 294);
             Controls.Add(labelMenu);
             Controls.Add(SubmitBtn);

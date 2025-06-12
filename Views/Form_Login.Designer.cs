@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
             button1 = new Button();
-            label1 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             SuspendLayout();
@@ -44,17 +43,6 @@
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(656, 614);
-            label1.Name = "label1";
-            label1.Size = new Size(24, 25);
-            label1.TabIndex = 1;
-            label1.Text = "...";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click;
             // 
             // textBox1
             // 
@@ -75,20 +63,18 @@
             textBox2.TabIndex = 3;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
-            // Form1
+            // Form_Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F); // Fahmi
-            //AutoScaleDimensions = new SizeF(8F, 20F); // Wildan
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1330, 700);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(label1);
             Controls.Add(button1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Form1";
+            Name = "Form_Login";
             Text = "Si Badir";
             ResumeLayout(false);
             PerformLayout();
@@ -97,7 +83,6 @@
         #endregion
 
         private Button button1;
-        private Label label1;
         private TextBox textBox1;
         private TextBox textBox2;
     }
