@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiBadir")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d86b486eddca970284c801fa8331a53f1bda24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39a4dfeea054139f6de739da7e9427cc3d87b355")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiBadir")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiBadir")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,5 +16,7 @@ namespace SiBadir.Model
         public DateTime? TanggalPerubahan { get; set; }
         public string JenisPerubahan { get; set; }
         public string Keterangan { get; set; }
+        public string NamaBahan { get; internal set; }
+        public string NamaUser { get; internal set; }
     }
 }
