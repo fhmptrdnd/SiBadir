@@ -92,3 +92,5 @@ C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.FormStok
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.BaseMenuHistory.resources
 C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.FormHistoryStok.resources
 >>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Views.Components.BaseMenuHistory.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Views.Components.FormHistoryStok.resources
