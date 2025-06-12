@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SiBadir;
 using SiBadir.View;
+using SiBadir.Views.Components;
 //using SiBadir.Views.Components;
 
 namespace SiBadir
@@ -58,7 +59,11 @@ namespace SiBadir
 
         private void bt_History_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             SiBadir.Controller.FormController.LoadFormInPanel(this.panel1, new FormHistoryBahan());
+=======
+            SiBadir.Controller.FormController.LoadFormInPanel(this.panel1, new FormHistoryStok());
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
         }
 
         private void btBack_Click(object sender, EventArgs e)

@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\",
+  "WorkspaceRootPath": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\users\\fahmi\\documents\\tugas kuliah fahmi\\c#\\sibadir\\controllers\\menubahancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:controllers\\menubahancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -125,6 +126,102 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\users\\fahmi\\documents\\tugas kuliah fahmi\\c#\\sibadir\\views\\components\\tambahkaryawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\tambahkaryawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\form_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\form_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|C:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\form_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\form_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\repositories\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:repositories\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formaddeditbahan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formaddeditbahan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formmenukaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formmenukaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formstokbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formstokbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formaddeditbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formaddeditbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|C:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formmenukaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formmenukaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\tambahkaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\tambahkaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\repositories\\bahanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:repositories\\bahanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\models\\bahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:models\\bahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\controllers\\menubahancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:controllers\\menubahancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formstokbahan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formstokbahan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\controllers\\menukaryawancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:controllers\\menukaryawancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\tambahkaryawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\tambahkaryawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|C:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\tambahkaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\tambahkaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|C:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\components\\formstokbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\components\\formstokbahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|c:\\coolyeah\\pbo\\perojek\\project007_sln\\views\\form_menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC111607-0C7E-4245-8819-9A91459DCA24}|SiBadir.csproj|solutionrelative:views\\form_menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
     }
   ],
   "DocumentGroupContainers": [
@@ -134,15 +231,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 12,
+=======
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "FormMenuKaryawan.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormMenuKaryawan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormMenuKaryawan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormMenuKaryawan.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormMenuKaryawan.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormMenuKaryawan.cs",
               "RelativeToolTip": "Views\\Components\\FormMenuKaryawan.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -152,12 +257,13 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "DatabaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Repositories\\DatabaseRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\DatabaseRepository.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Repositories\\DatabaseRepository.cs*",
-              "RelativeToolTip": "Repositories\\DatabaseRepository.cs*",
+              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Repositories\\DatabaseRepository.cs",
+              "RelativeToolTip": "Repositories\\DatabaseRepository.cs",
               "ViewState": "AgIAAD4CAAAAAAAAAAAAAIYCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T13:43:04.973Z",
@@ -274,71 +380,131 @@
               "RelativeDocumentMoniker": "Views\\Components\\FormMenuKaryawan.cs",
               "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormMenuKaryawan.cs [Design]",
               "RelativeToolTip": "Views\\Components\\FormMenuKaryawan.cs [Design]",
+=======
+              "DocumentIndex": 2,
+              "Title": "Form_Login.cs [Design]",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Login.cs",
+              "RelativeDocumentMoniker": "Views\\Form_Login.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Login.cs [Design]",
+              "RelativeToolTip": "Views\\Form_Login.cs [Design]",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T03:17:26.305Z",
+              "WhenOpened": "2025-06-09T12:30:07.593Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Views\\MainMenu.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.cs",
+              "RelativeToolTip": "Views\\MainMenu.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAD4vygAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:26:42.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Views\\MainMenu.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Views\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:26:36.485Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 18,
               "Title": "FormAddEditBahan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormAddEditBahan.cs",
               "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.cs [Design]",
               "RelativeToolTip": "Views\\Components\\FormAddEditBahan.cs [Design]",
+=======
+              "DocumentIndex": 11,
+              "Title": "FormMenuKaryawan.cs [Design]",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormMenuKaryawan.cs",
+              "RelativeDocumentMoniker": "Views\\Components\\FormMenuKaryawan.cs",
+              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormMenuKaryawan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormMenuKaryawan.cs [Design]",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:49.699Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-09T03:17:26.305Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 7,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "FormAddEditBahan.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.Designer.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormAddEditBahan.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormAddEditBahan.Designer.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.Designer.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormAddEditBahan.Designer.cs",
               "RelativeToolTip": "Views\\Components\\FormAddEditBahan.Designer.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAWAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T05:38:55.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 10,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "FormAddEditBahan.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormAddEditBahan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormAddEditBahan.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormAddEditBahan.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormAddEditBahan.cs",
               "RelativeToolTip": "Views\\Components\\FormAddEditBahan.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwCsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:39:25.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T05:39:25.514Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 14,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "BahanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Repositories\\BahanRepository.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Repositories\\BahanRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\BahanRepository.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Repositories\\BahanRepository.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Repositories\\BahanRepository.cs",
               "RelativeToolTip": "Repositories\\BahanRepository.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAApwFkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:11:40.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T05:11:40.175Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 16,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "MenuBahanController.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Controllers\\MenuBahanController.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\MenuBahanController.cs",
               "RelativeDocumentMoniker": "Controllers\\MenuBahanController.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Controllers\\MenuBahanController.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\MenuBahanController.cs",
               "RelativeToolTip": "Controllers\\MenuBahanController.cs",
-              "ViewState": "AgIAAEcBAAAAAAAAAAAAwFYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAUwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-06-09T05:05:50.113Z",
               "EditorCaption": ""
             },
@@ -364,17 +530,45 @@
               "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.Designer.cs",
               "RelativeToolTip": "Views\\Components\\FormStokBahan.Designer.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T04:21:54.169Z",
-              "EditorCaption": ""
+=======
+              "WhenOpened": "2025-06-09T05:05:50.113Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FormController.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\FormController.cs",
+              "RelativeToolTip": "Controllers\\FormController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T04:24:52.645Z"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 14,
+=======
+              "DocumentIndex": 17,
+              "Title": "FormStokBahan.Designer.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormStokBahan.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\Components\\FormStokBahan.Designer.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormStokBahan.Designer.cs",
+              "RelativeToolTip": "Views\\Components\\FormStokBahan.Designer.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T04:21:54.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "FormStokBahan.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormStokBahan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormStokBahan.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormStokBahan.cs",
               "RelativeToolTip": "Views\\Components\\FormStokBahan.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAtwDkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,23 +577,30 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 16,
+=======
+              "DocumentIndex": 21,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "FormStokBahan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\FormStokBahan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\FormStokBahan.cs",
               "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.cs [Design]",
-              "RelativeToolTip": "Views\\Components\\FormStokBahan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\FormStokBahan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T04:07:33.294Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-09T04:07:33.294Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 20,
+=======
+              "DocumentIndex": 1,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "Form_Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.cs",
               "RelativeDocumentMoniker": "Views\\Form_Menu.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.cs [Design]",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.cs [Design]",
               "RelativeToolTip": "Views\\Form_Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T15:40:12.161Z",
@@ -407,24 +608,31 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 30,
+=======
+              "DocumentIndex": 19,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "TambahKaryawan.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.Designer.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\TambahKaryawan.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Components\\TambahKaryawan.Designer.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.Designer.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\TambahKaryawan.Designer.cs",
               "RelativeToolTip": "Views\\Components\\TambahKaryawan.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:16:09.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T15:16:09.251Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 26,
+=======
+              "DocumentIndex": 13,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "TambahKaryawan.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\TambahKaryawan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\TambahKaryawan.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\TambahKaryawan.cs",
               "RelativeToolTip": "Views\\Components\\TambahKaryawan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -433,23 +641,30 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 17,
+=======
+              "DocumentIndex": 20,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "TambahKaryawan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Components\\TambahKaryawan.cs",
               "RelativeDocumentMoniker": "Views\\Components\\TambahKaryawan.cs",
               "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.cs [Design]",
-              "RelativeToolTip": "Views\\Components\\TambahKaryawan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Components\\TambahKaryawan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:10:36.482Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-08T15:10:36.482Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 23,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "Form_Menu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.Designer.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Form_Menu.Designer.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.Designer.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.Designer.cs",
               "RelativeToolTip": "Views\\Form_Menu.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -458,37 +673,57 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 29,
+=======
+              "DocumentIndex": 5,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "MainMenu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\MainMenu.Designer.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.Designer.cs",
               "RelativeDocumentMoniker": "Views\\MainMenu.Designer.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\MainMenu.Designer.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\MainMenu.Designer.cs",
               "RelativeToolTip": "Views\\MainMenu.Designer.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAPAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwDgAAABDAAAAAAAAAA==",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T14:35:12.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 0,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "Form_Menu.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.cs",
               "RelativeDocumentMoniker": "Views\\Form_Menu.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Menu.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Menu.cs",
               "RelativeToolTip": "Views\\Form_Menu.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAC8AAAAAAAAAAIAwwDUAAAAAAAAAAAAAAA==",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T14:24:23.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 21,
+=======
+              "DocumentIndex": 22,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "Form_Login.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Login.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Login.cs",
               "RelativeDocumentMoniker": "Views\\Form_Login.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Views\\Form_Login.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Views\\Form_Login.cs",
               "RelativeToolTip": "Views\\Form_Login.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAwwDUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -497,6 +732,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 27,
               "Title": "HistoryStokBahan.cs",
               "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Models\\HistoryStokBahan.cs",
@@ -506,33 +742,46 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAgwAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T12:39:52.041Z",
+=======
+              "DocumentIndex": 4,
+              "Title": "DatabaseRepository.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Repositories\\DatabaseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DatabaseRepository.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Repositories\\DatabaseRepository.cs",
+              "RelativeToolTip": "Repositories\\DatabaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:43:04.973Z",
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 25,
+=======
+              "DocumentIndex": 15,
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
               "Title": "Bahan.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Models\\Bahan.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Models\\Bahan.cs",
               "RelativeDocumentMoniker": "Models\\Bahan.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Models\\Bahan.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Models\\Bahan.cs",
               "RelativeToolTip": "Models\\Bahan.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:39:49.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T12:39:49.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "MenuKaryawanController.cs",
-              "DocumentMoniker": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Controllers\\MenuKaryawanController.cs",
+              "DocumentMoniker": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\MenuKaryawanController.cs",
               "RelativeDocumentMoniker": "Controllers\\MenuKaryawanController.cs",
-              "ToolTip": "C:\\Users\\fahmi\\Documents\\Tugas Kuliah Fahmi\\C#\\SiBadir\\Controllers\\MenuKaryawanController.cs",
+              "ToolTip": "C:\\coolyeah\\pbo\\perojek\\project007_sln\\Controllers\\MenuKaryawanController.cs",
               "RelativeToolTip": "Controllers\\MenuKaryawanController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwEYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:39:34.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T12:39:34.985Z"
             }
           ]
         }

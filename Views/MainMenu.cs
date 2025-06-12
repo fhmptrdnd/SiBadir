@@ -37,5 +37,10 @@ namespace SiBadir
             //LoadFormInPanel(new FormMenuKaryawan());
             SiBadir.Controller.FormController.LoadFormInPanel(this.mainContainer, new FormMenuKaryawan());
         }
+
+        private void HistoryStokBahanBtn_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
