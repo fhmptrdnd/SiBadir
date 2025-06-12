@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SiBadir;
 using SiBadir.View;
+using SiBadir.Views.Components;
 //using SiBadir.Views.Components;
 
 namespace SiBadir

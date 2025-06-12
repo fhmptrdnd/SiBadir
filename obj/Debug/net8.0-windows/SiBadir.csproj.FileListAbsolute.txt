@@ -69,6 +69,7 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.FormHistoryBahan.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormMenuKaryawan.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
+<<<<<<< HEAD
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.TambahKaryawan.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Login.resources
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Menu.resources
@@ -85,3 +86,56 @@ C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.pdb
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\SiBadir.genruntimeconfig.cache
 C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\C#\SiBadir\obj\Debug\net8.0-windows\ref\SiBadir.dll
+=======
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.View.FormAddEditBahan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.BaseMenuHistory.resources
+C:\coolyeah\pbo\perojek\project007_sln\obj\Debug\net8.0-windows\SiBadir.Views.Components.FormHistoryStok.resources
+>>>>>>> abf6d71e8d77a59fc33a05aa35b285575b416475
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.AssemblyReference.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.Properties.Resources.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.Views.Components.BaseMenuHistory.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.FormAddEditBahan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.FormHistoryBahan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.Views.Components.FormHistoryStok.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormMenuKaryawan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.FormStokBahan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.View.TambahKaryawan.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Login.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.Form_Menu.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.MainMenu.resources
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.GenerateResource.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.AssemblyInfoInputs.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.AssemblyInfo.cs
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.CoreCompileInputs.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.sourcelink.json
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\refint\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.pdb
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\SiBadir.exe
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\SiBadir.deps.json
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\SiBadir.runtimeconfig.json
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\SiBadir.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\SiBadir.pdb
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\NetTopologySuite.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\NetTopologySuite.IO.PostGis.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\Npgsql.NetTopologySuite.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.csproj.Up2Date
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\SiBadir.genruntimeconfig.cache
+C:\Users\fahmi\Documents\Tugas Kuliah Fahmi\backup_PBO\SiBadir\obj\Debug\net8.0-windows\ref\SiBadir.dll
