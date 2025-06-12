@@ -54,7 +54,7 @@
             // 
             // MenuContainer2
             // 
-            MenuContainer2.BackColor = Color.FromArgb(64, 64, 64);
+            MenuContainer2.BackColor = Color.IndianRed;
             MenuContainer2.Controls.Add(btnHapusBahan);
             MenuContainer2.Controls.Add(labelMenu);
             MenuContainer2.Controls.Add(btnEditBahan);

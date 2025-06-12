@@ -99,7 +99,7 @@
             // 
             // MenuContainer
             // 
-            MenuContainer.BackColor = Color.FromArgb(64, 64, 64);
+            MenuContainer.BackColor = Color.IndianRed;
             MenuContainer.Controls.Add(labelMenu);
             MenuContainer.Controls.Add(Edit_Karyawan);
             MenuContainer.Controls.Add(Hapus_Karyawan);

@@ -7,39 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SiBadir.Controllers; // Untuk mengakses StokBahanController
-using SiBadir.Model;      // Untuk mengakses model Bahan
+using SiBadir.Controllers;
+using SiBadir.Model;
 
 namespace SiBadir.View
 {
     public partial class FormAddEditBahan : Form
     {
-        private readonly bool _editMode; // Flag untuk mengetahui apakah mode edit atau tambah
-        private Bahan? _bahan; // Objek Bahan yang akan diedit (null jika mode tambah)
-
-
-        public FormAddEditBahan()
+        private readonly bool _editMode;
+        private Bahan? _bahan;
+        private int _loggedInUserId; 
+        public FormAddEditBahan(int loggedInUserId)
         {
             InitializeComponent();
-            _editMode = false; 
-            SubmitBtn.Text = "Tambah Bahan"; 
+            _editMode = false;
+            SubmitBtn.Text = "Tambah Bahan";
             labelMenu.Text = "Tambah Data Bahan";
-            StokBahanTextBox.Text = "0";
+            StokBahanTextBox.Text = "0"; 
+
+            _loggedInUserId = loggedInUserId;
 
             SubmitBtn.Click += SubmitBtn_Click;
             Return_Button.Click += Return_Button_Click;
-            this.Load += FormAddEditBahan_Load; 
+            this.Load += FormAddEditBahan_Load;
         }
 
-        public FormAddEditBahan(Bahan? bahan)
+        public FormAddEditBahan(Bahan? bahan, int loggedInUserId)
         {
             InitializeComponent();
 
             _editMode = true;
-            _bahan = bahan;   
-            SubmitBtn.Text = "Update Data Bahan"; 
+            _bahan = bahan;
+            SubmitBtn.Text = "Update Data Bahan";
             labelMenu.Text = "Edit Data Bahan";
 
+            _loggedInUserId = loggedInUserId;
 
             if (_bahan != null)
             {
@@ -51,17 +53,17 @@ namespace SiBadir.View
 
             SubmitBtn.Click += SubmitBtn_Click;
             Return_Button.Click += Return_Button_Click;
-            this.Load += FormAddEditBahan_Load; 
+            this.Load += FormAddEditBahan_Load;
         }
 
         private void Return_Button_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void SubmitBtn_Click(object sender, EventArgs e)
@@ -75,7 +77,6 @@ namespace SiBadir.View
                 return;
             }
 
-            
             if (!int.TryParse(IdKategoriTextBox.Text, out int idKategori) || idKategori <= 0)
             {
                 MessageBox.Show("ID Kategori harus berupa angka bulat positif!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -88,44 +89,52 @@ namespace SiBadir.View
                 return;
             }
 
-
-            if (_editMode)
+            try
             {
-                if (_bahan != null)
+                if (_editMode)
                 {
-                    _bahan.NamaBahan = NamaBahanTextBox.Text.Trim();
-                    _bahan.SatuanBahan = SatuanBahanTextBox.Text.Trim();
-                    _bahan.IdKategori = idKategori;
-                    _bahan.StokBahan = stokBahan;
-
-                    if (StokBahanController.EditBahan(_bahan))
+                    if (_bahan != null)
                     {
-                        MessageBox.Show("Data bahan berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Close(); 
+                        _bahan.NamaBahan = NamaBahanTextBox.Text.Trim();
+                        _bahan.SatuanBahan = SatuanBahanTextBox.Text.Trim();
+                        _bahan.IdKategori = idKategori;
+                        _bahan.StokBahan = stokBahan;
+
+                        if (StokBahanController.EditBahan(_bahan, _loggedInUserId))
+                        {
+                            MessageBox.Show("Data bahan berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Gagal memperbarui data bahan! (Pesan generik)", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+                else 
+                {
+                    if (StokBahanController.TambahBahan(NamaBahanTextBox.Text, SatuanBahanTextBox.Text, idKategori, stokBahan, _loggedInUserId))
+                    {
+                        MessageBox.Show("Bahan berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.DialogResult = DialogResult.OK; 
+                        this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Gagal memperbarui data bahan!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Gagal Menambah Data Bahan! (Pesan generik)", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
-            else
-            {             
-                if (StokBahanController.TambahBahan(NamaBahanTextBox.Text, SatuanBahanTextBox.Text, idKategori, stokBahan))
-                {
-                    MessageBox.Show("Bahan berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close(); 
-                }
-                else
-                {
-                    MessageBox.Show("Gagal Menambah Data Bahan!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error Operasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void FormAddEditBahan_Load(object sender, EventArgs e) 
+        private void FormAddEditBahan_Load(object sender, EventArgs e)
         {
-          
+
         }
 
         private void labelMenu_Click(object sender, EventArgs e)

@@ -1,4 +1,100 @@
-﻿using System;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using SiBadir.Model;
+//using SiBadir.Repositories;
+
+//namespace SiBadir.Controllers
+//{
+//    public class StokBahanController
+//    {
+//        private static BahanRepository repo = new();
+
+//        public static List<Bahan> GetDataStokBahan()
+//        {
+//            try
+//            {
+//                return repo.GetAll().Where(b => b.IsActive == 1).ToList();
+//            }
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine($"Error saat mengambil data stok bahan: {ex.Message}");
+//                return new List<Bahan>();
+//            }
+//        }
+
+//        public static bool TambahBahan(string namaBahan, string satuanBahan, int idKategori, int stokBahan)
+//        {
+//            if (string.IsNullOrWhiteSpace(namaBahan) || string.IsNullOrWhiteSpace(satuanBahan) || idKategori <= 0)
+//            {
+//                return false;
+//            }
+
+//            try
+//            {
+//                Bahan newBahan = new Bahan
+//                {
+//                    NamaBahan = namaBahan.Trim(),
+//                    SatuanBahan = satuanBahan.Trim(),
+//                    IdKategori = idKategori,
+//                    StokBahan = stokBahan,
+//                    IsActive = 1
+//                };
+
+//                repo.Insert(newBahan);
+
+//                return true;
+//            }
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine($"Error saat menambahkan bahan: {ex.Message}");
+//                return false;
+//            }
+//        }
+
+//        public static bool EditBahan(Bahan bahan)
+//        {
+//            if (bahan == null || bahan.IdBahan <= 0 || string.IsNullOrWhiteSpace(bahan.NamaBahan) ||
+//                string.IsNullOrWhiteSpace(bahan.SatuanBahan) || bahan.IdKategori <= 0)
+//            {
+//                return false;
+//            }
+
+//            try
+//            {
+//                repo.Update(bahan);
+
+//                return true;
+//            }
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine($"Error saat mengedit bahan: {ex.Message}");
+//                return false;
+//            }
+//        }
+
+//        public static bool HapusBahan(int IdBahan)
+//        {
+//            if (IdBahan <= 0)
+//            {
+//                return false;
+//            }
+
+//            try
+//            {
+//                repo.Delete(IdBahan);
+//                return true;
+//            }
+//            catch (Exception ex)
+//            {
+//                Console.WriteLine($"Error saat menghapus (menonaktifkan) bahan: {ex.Message}");
+//                return false;
+//            }
+//        }
+//    }
+//}
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using SiBadir.Model;
@@ -6,90 +102,388 @@ using SiBadir.Repositories;
 
 namespace SiBadir.Controllers
 {
-    public class StokBahanController
-    {
-        private static BahanRepository repo = new();
+    //    public class StokBahanController
+    //    {
+    //        private static BahanRepository _bahanRepo = new BahanRepository();
+    //        private static HistoryStokBahanRepository _historyRepo = new HistoryStokBahanRepository();
 
-        public static List<Bahan> GetDataStokBahan()
+    //        public static List<BahanDisplay> GetDataStokBahan()
+    //        {
+    //            try
+    //            {
+    //                return _bahanRepo.GetAllBahanDisplay(); 
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                Console.WriteLine($"Error saat mengambil data stok bahan: {ex.Message}");
+    //                throw new Exception($"Gagal mengambil data stok bahan: {ex.Message}");
+    //            }
+    //        }
+
+    //        public static bool TambahBahan(string namaBahan, string satuanBahan, int idKategori, int stokBahan, int idUser)
+    //        {
+    //            if (string.IsNullOrWhiteSpace(namaBahan) || string.IsNullOrWhiteSpace(satuanBahan) || idKategori <= 0)
+    //            {
+    //                return false;
+    //            }
+
+    //            try
+    //            {
+    //                Bahan newBahan = new Bahan
+    //                {
+    //                    NamaBahan = namaBahan.Trim(),
+    //                    SatuanBahan = satuanBahan.Trim(),
+    //                    IdKategori = idKategori,
+    //                    StokBahan = stokBahan, 
+    //                    IsActive = 1
+    //                };
+
+    //                _bahanRepo.Insert(newBahan);
+
+    //                var addedBahan = _bahanRepo.GetAllBahanDisplay().OrderByDescending(b => b.IdBahan).FirstOrDefault(b => b.NamaBahan == namaBahan && b.SatuanBahan == satuanBahan);
+    //                int? addedBahanId = addedBahan?.IdBahan;
+
+    //                _historyRepo.Insert(new HistoryStokBahan
+    //                {
+    //                    IdBahan = addedBahanId,
+    //                    IdUser = idUser,
+    //                    StokSebelum = 0,
+    //                    StokSesudah = stokBahan,
+    //                    JenisPerubahan = "Penambahan Bahan",
+    //                    Keterangan = $"Menambah bahan baru: '{namaBahan.Trim()}' dengan satuan '{satuanBahan.Trim()}' dan stok awal 0."
+    //                });
+
+    //                return true;
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                Console.WriteLine($"Error saat menambahkan bahan: {ex.Message}");
+    //                return false;
+    //            }
+    //        }
+
+    //        public static bool EditBahan(Bahan bahan, int idUser)
+    //        {
+    //            if (bahan == null || bahan.IdBahan <= 0 || string.IsNullOrWhiteSpace(bahan.NamaBahan) ||
+    //                string.IsNullOrWhiteSpace(bahan.SatuanBahan) || bahan.IdKategori <= 0)
+    //            {
+    //                return false;
+    //            }
+
+    //            try
+    //            {
+    //                Bahan oldBahan = _bahanRepo.GetById(bahan.IdBahan);
+    //                if (oldBahan == null) return false; 
+
+    //                _bahanRepo.Update(bahan);
+
+    //                string changes = "";
+    //                if (oldBahan.NamaBahan != bahan.NamaBahan)
+    //                {
+    //                    changes += $"Nama dari '{oldBahan.NamaBahan}' menjadi '{bahan.NamaBahan}'. ";
+    //                }
+    //                if (oldBahan.SatuanBahan != bahan.SatuanBahan)
+    //                {
+    //                    changes += $"Satuan dari '{oldBahan.SatuanBahan}' menjadi '{bahan.SatuanBahan}'. ";
+    //                }
+    //                if (oldBahan.IdKategori != bahan.IdKategori)
+    //                {
+    //                    changes += $"ID Kategori dari '{oldBahan.IdKategori}' menjadi '{bahan.IdKategori}'. ";
+    //                }
+
+    //                //catat riwayat edit bahan
+    //                if (!string.IsNullOrEmpty(changes))
+    //                {
+    //                    _historyRepo.Insert(new HistoryStokBahan
+    //                    {
+    //                        IdBahan = bahan.IdBahan,
+    //                        IdUser = idUser,
+    //                        StokSebelum = oldBahan.StokBahan, 
+    //                        StokSesudah = bahan.StokBahan,
+    //                        JenisPerubahan = "Perubahan Data Bahan",
+    //                        Keterangan = $"Mengubah data bahan '{bahan.NamaBahan}': {changes.Trim()}"
+    //                    });
+    //                }
+
+    //                return true;
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                Console.WriteLine($"Error saat mengedit bahan: {ex.Message}");
+    //                throw new Exception($"Gagal memperbarui bahan: {ex.Message}");
+    //            }
+    //        }
+
+    //        public static bool HapusBahan(int idBahan, int idUser)
+    //        {
+    //            if (idBahan <= 0)
+    //            {
+    //                return false;
+    //            }
+
+    //            try
+    //            {
+    //                Bahan bahanToDelete = _bahanRepo.GetById(idBahan);
+    //                if (bahanToDelete == null) return false; 
+
+    //                _bahanRepo.Delete(idBahan);
+
+    //                int newBahanId = _bahanRepo.Insert(newBahan);
+
+    //                _historyRepo.Insert(new HistoryStokBahan
+    //                {
+    //                    IdBahan = newBahanId,
+    //                    IdUser = idUser,
+    //                    StokSebelum = bahanToDelete.StokBahan,
+    //                    StokSesudah = bahanToDelete.StokBahan,
+    //                    JenisPerubahan = "Penonaktifan Bahan",
+    //                    Keterangan = $"Menonaktifkan bahan: '{bahanToDelete.NamaBahan}'."
+    //                });
+
+    //                return true;
+    //            }
+    //            catch (Exception ex)
+    //            {
+    //                Console.WriteLine($"Error saat menghapus (menonaktifkan) bahan: {ex.Message}");
+    //                throw new Exception($"Gagal menghapus bahan: {ex.Message}");
+    //            }
+    //        }
+    //    }
+        public class StokBahanController
         {
-            try
-            {
-                return repo.GetAll().Where(b => b.IsActive == 1).ToList();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error saat mengambil data stok bahan: {ex.Message}");
-                return new List<Bahan>();
-            }
-        }
+            private static BahanRepository _bahanRepo = new BahanRepository();
+            private static HistoryStokBahanRepository _historyRepo = new HistoryStokBahanRepository();
 
-        public static bool TambahBahan(string namaBahan, string satuanBahan, int idKategori, int stokBahan)
-        {
-            if (string.IsNullOrWhiteSpace(namaBahan) || string.IsNullOrWhiteSpace(satuanBahan) || idKategori <= 0)
+            // Metode untuk mendapatkan data stok bahan beserta nama kategori untuk tampilan DataGridView
+            public static List<BahanDisplay> GetDataStokBahan()
             {
-                return false;
-            }
-
-            try
-            {
-                Bahan newBahan = new Bahan
+                try
                 {
-                    NamaBahan = namaBahan.Trim(),
-                    SatuanBahan = satuanBahan.Trim(),
-                    IdKategori = idKategori,
-                    StokBahan = stokBahan,
-                    IsActive = 1
-                };
-
-                repo.Insert(newBahan);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error saat menambahkan bahan: {ex.Message}");
-                return false;
-            }
-        }
-
-        public static bool EditBahan(Bahan bahan)
-        {
-            if (bahan == null || bahan.IdBahan <= 0 || string.IsNullOrWhiteSpace(bahan.NamaBahan) ||
-                string.IsNullOrWhiteSpace(bahan.SatuanBahan) || bahan.IdKategori <= 0)
-            {
-                return false;
+                    // Memanggil metode GetAllBahanDisplay dari BahanRepository
+                    return _bahanRepo.GetAllBahanDisplay();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat mengambil data stok bahan: {ex.Message}");
+                    // Melempar exception agar error dapat ditangkap dan ditampilkan di UI
+                    throw new Exception($"Gagal mengambil data stok bahan: {ex.Message}");
+                }
             }
 
-            try
+            // Metode untuk menambahkan bahan baru dan mencatat riwayat
+            public static bool TambahBahan(string namaBahan, string satuanBahan, int idKategori, int stokBahan, int idUser)
             {
-                repo.Update(bahan);
+                // Validasi input dasar sebelum mencoba operasi database
+                if (string.IsNullOrWhiteSpace(namaBahan) || string.IsNullOrWhiteSpace(satuanBahan) || idKategori <= 0)
+                {
+                    Console.WriteLine("Validasi input gagal: Nama bahan, satuan, atau kategori tidak valid.");
+                    return false; // Mengembalikan false jika validasi input tidak terpenuhi
+                }
 
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error saat mengedit bahan: {ex.Message}");
-                return false;
-            }
-        }
+                try
+                {
+                    // Membuat objek Bahan baru dari data input
+                    Bahan newBahan = new Bahan
+                    {
+                        NamaBahan = namaBahan.Trim(),
+                        SatuanBahan = satuanBahan.Trim(),
+                        IdKategori = idKategori,
+                        StokBahan = stokBahan, // Stok awal diambil dari parameter
+                        IsActive = 1
+                    };
 
-        public static bool HapusBahan(int IdBahan)
-        {
-            if (IdBahan <= 0)
-            {
-                return false;
+                    // Memasukkan bahan ke database dan mendapatkan ID yang baru di-generate
+                    int newBahanId = _bahanRepo.Insert(newBahan);
+
+                    // Mencatat riwayat penambahan bahan
+                    _historyRepo.Insert(new HistoryStokBahan
+                    {
+                        IdBahan = newBahanId, // Menggunakan ID bahan yang baru didapat
+                        IdUser = idUser,
+                        StokSebelum = 0, // Stok sebelum penambahan bahan baru (biasanya 0)
+                        StokSesudah = stokBahan, // Stok sesudah penambahan, sesuai inputan
+                        JenisPerubahan = "Penambahan Bahan",
+                        Keterangan = $"Menambah bahan baru: '{namaBahan.Trim()}' dengan satuan '{satuanBahan.Trim()}' dan stok awal {stokBahan}."
+                    });
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat menambahkan bahan: {ex.Message}");
+                    // Melempar exception  error dapat ditangkap dan ditampilkan di UI
+                    throw new Exception($"Gagal menambahkan bahan: {ex.Message}");
+                }
             }
 
-            try
+            // Metode untuk mengedit data bahan yang sudah ada dan mencatat riwayat
+            public static bool EditBahan(Bahan bahan, int idUser)
             {
-                repo.Delete(IdBahan);
-                return true;
+                // Validasi input dasar
+                if (bahan == null || bahan.IdBahan <= 0 || string.IsNullOrWhiteSpace(bahan.NamaBahan) ||
+                    string.IsNullOrWhiteSpace(bahan.SatuanBahan) || bahan.IdKategori <= 0)
+                {
+                    Console.WriteLine("Validasi input gagal: Objek bahan tidak valid atau ID bahan <= 0.");
+                    return false;
+                }
+
+                try
+                {
+                    // Mengambil data bahan lama sebelum diupdate untuk perbandingan riwayat
+                    Bahan oldBahan = _bahanRepo.GetById(bahan.IdBahan);
+                    if (oldBahan == null)
+                    {
+                        Console.WriteLine($"Bahan dengan ID {bahan.IdBahan} tidak ditemukan untuk diedit.");
+                        // Melempar exception jika bahan tidak ditemukan
+                        throw new Exception($"Bahan dengan ID {bahan.IdBahan} tidak ditemukan.");
+                    }
+
+                    // Melakukan update data bahan di database
+                    _bahanRepo.Update(bahan);
+
+                    // Membangun string perubahan untuk keterangan riwayat
+                    string changes = "";
+                    if (oldBahan.NamaBahan != bahan.NamaBahan)
+                    {
+                        changes += $"Nama dari '{oldBahan.NamaBahan}' menjadi '{bahan.NamaBahan}'. ";
+                    }
+                    if (oldBahan.SatuanBahan != bahan.SatuanBahan)
+                    {
+                        changes += $"Satuan dari '{oldBahan.SatuanBahan}' menjadi '{bahan.SatuanBahan}'. ";
+                    }
+                    if (oldBahan.IdKategori != bahan.IdKategori)
+                    {
+                        changes += $"ID Kategori dari '{oldBahan.IdKategori}' menjadi '{bahan.IdKategori}'. ";
+                    }
+                    if (oldBahan.StokBahan != bahan.StokBahan)
+                    {
+                        changes += $"Stok dari {oldBahan.StokBahan} menjadi {bahan.StokBahan}. ";
+                    }
+
+                    // Menentukan keterangan akhir untuk riwayat
+                    string finalKeterangan = string.IsNullOrEmpty(changes) ?
+                                             $"Tidak ada perubahan data spesifik untuk bahan '{bahan.NamaBahan}'." :
+                                             $"Mengubah data bahan '{bahan.NamaBahan}': {changes.Trim()}";
+
+                    // Mencatat riwayat perubahan data bahan
+                    _historyRepo.Insert(new HistoryStokBahan
+                    {
+                        IdBahan = bahan.IdBahan,
+                        IdUser = idUser,
+                        StokSebelum = oldBahan.StokBahan,
+                        StokSesudah = bahan.StokBahan,
+                        JenisPerubahan = "Perubahan Data Bahan",
+                        Keterangan = finalKeterangan
+                    });
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat mengedit bahan: {ex.Message}");
+                    // Melempar exception agar error dapat ditangkap dan ditampilkan di UI
+                    throw new Exception($"Gagal mengedit bahan: {ex.Message}");
+                }
             }
-            catch (Exception ex)
+
+            // Metode untuk mengupdate stok bahan secara spesifik dan mencatat riwayat
+            public static bool UpdateStokBahan(int idBahan, int newStok, int idUser)
             {
-                Console.WriteLine($"Error saat menghapus (menonaktifkan) bahan: {ex.Message}");
-                return false;
+                // Validasi input dasar
+                if (idBahan <= 0 || newStok < 0)
+                {
+                    Console.WriteLine("Validasi input gagal: ID bahan tidak valid atau stok baru negatif.");
+                    return false;
+                }
+
+                try
+                {
+                    // Mengambil data bahan yang akan diupdate stoknya
+                    Bahan bahanToUpdate = _bahanRepo.GetById(idBahan);
+                    if (bahanToUpdate == null)
+                    {
+                        Console.WriteLine($"Bahan dengan ID {idBahan} tidak ditemukan untuk update stok.");
+                        // Melempar exception jika bahan tidak ditemukan
+                        throw new Exception($"Bahan dengan ID {idBahan} tidak ditemukan.");
+                    }
+
+                    int oldStok = bahanToUpdate.StokBahan; // Menyimpan stok lama
+                    bahanToUpdate.StokBahan = newStok; // Mengatur stok baru
+
+                    // Melakukan update stok di database
+                    _bahanRepo.Update(bahanToUpdate);
+
+                    // Menentukan keterangan untuk riwayat
+                    string finalKeterangan = $"Mengubah stok bahan '{bahanToUpdate.NamaBahan}' dari {oldStok} menjadi {newStok}.";
+
+                    // Mencatat riwayat perubahan stok
+                    _historyRepo.Insert(new HistoryStokBahan
+                    {
+                        IdBahan = idBahan,
+                        IdUser = idUser,
+                        StokSebelum = oldStok,
+                        StokSesudah = newStok,
+                        JenisPerubahan = "Perubahan Stok",
+                        Keterangan = finalKeterangan
+                    });
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat mengupdate stok bahan: {ex.Message}");
+                    // Melempar exception agar error dapat ditangkap dan ditampilkan di UI
+                    throw new Exception($"Gagal mengupdate stok bahan: {ex.Message}");
+                }
+            }
+
+            // Metode untuk menghapus (menonaktifkan) bahan dan mencatat riwayat
+            public static bool HapusBahan(int idBahan, int idUser)
+            {
+                // Validasi input dasar
+                if (idBahan <= 0)
+                {
+                    Console.WriteLine("Validasi input gagal: ID bahan tidak valid.");
+                    return false;
+                }
+
+                try
+                {
+                    // Mengambil data bahan yang akan dihapus untuk keterangan riwayat
+                    Bahan bahanToDelete = _bahanRepo.GetById(idBahan);
+                    if (bahanToDelete == null)
+                    {
+                        Console.WriteLine($"Bahan dengan ID {idBahan} tidak ditemukan untuk dihapus.");
+                        // Melempar exception jika bahan tidak ditemukan
+                        throw new Exception($"Bahan dengan ID {idBahan} tidak ditemukan.");
+                    }
+
+                    // Melakukan logical delete (menonaktifkan) bahan di database
+                    _bahanRepo.Delete(idBahan);
+
+                    // Menentukan keterangan untuk riwayat
+                    string finalKeterangan = $"Menonaktifkan bahan: '{bahanToDelete.NamaBahan}'.";
+
+                    // Mencatat riwayat penonaktifan bahan
+                    _historyRepo.Insert(new HistoryStokBahan
+                    {
+                        IdBahan = idBahan,
+                        IdUser = idUser,
+                        StokSebelum = bahanToDelete.StokBahan,
+                        StokSesudah = bahanToDelete.StokBahan, // Stok secara fungsional tidak berubah saat dinonaktifkan
+                        JenisPerubahan = "Penonaktifan Bahan",
+                        Keterangan = finalKeterangan
+                    });
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat menghapus (menonaktifkan) bahan: {ex.Message}");
+                    // Melempar exception agar error dapat ditangkap dan ditampilkan di UI
+                    throw new Exception($"Gagal menghapus bahan: {ex.Message}");
+                }
             }
         }
     }
-}
+
