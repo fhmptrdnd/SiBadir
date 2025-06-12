@@ -1,0 +1,11 @@
+# Visual Studio generated files
+.vs/
+bin/
+obj/
+
+# Visual Studio user-specific settings
+*.csproj.user
+
+# Visual Studio temporary files / backups
+*.csproj.user.bak
+*-Backup.csproj.user
