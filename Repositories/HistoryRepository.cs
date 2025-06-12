@@ -29,11 +29,11 @@ namespace SiBadir.Repositories
             {
                 IdHistory = Convert.ToInt32(row["ID History"]),
                 TanggalPerubahan = Convert.ToDateTime(row["Tanggal Perubahan"]),
-                NamaBahan = row["Nama Bahan"]?.ToString() ?? "Data Bahan Hilang",
+                //NamaBahan = row["Nama Bahan"]?.ToString() ?? "Data Bahan Hilang",
                 JenisPerubahan = row["Jenis Perubahan"]?.ToString() ?? "",
                 StokSebelum = Convert.ToInt32(row["Stok Sebelum"]),
                 StokSesudah = Convert.ToInt32(row["Stok Sesudah"]),
-                NamaUser = row["User"]?.ToString() ?? "User Tidak Diketahui",
+                //NamaUser = row["User"]?.ToString() ?? "User Tidak Diketahui",
                 Keterangan = row["Keterangan"]?.ToString() ?? ""
             };
         }

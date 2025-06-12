@@ -110,7 +110,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using SiBadir.Model;
-// using Microsoft.VisualBasic.ApplicationServices; // Tidak diperlukan jika tidak menggunakan kelas User dari MVBA
+ //using Microsoft.VisualBasic.ApplicationServices; // Tidak diperlukan jika tidak menggunakan kelas User dari MVBA
 
 namespace SiBadir.Repositories
 {
