@@ -41,5 +41,17 @@ namespace SiBadir.Controllers
             KategoriRepository kategoriRepo = new();
             return kategoriRepo.GetNamaKategori();
         }
+        public static int checkKategori(string? nama_kategori = "")
+        {
+            var listKategori = getListKategori();
+            if (listKategori.Contains(nama_kategori))
+            {
+                return listKategori.IndexOf(nama_kategori) + 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }

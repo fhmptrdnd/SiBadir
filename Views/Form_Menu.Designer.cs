@@ -40,6 +40,7 @@ namespace SiBadir
             panel1 = new Panel();
             label1 = new Label();
             btBack = new Button();
+            NotifikasiBtn = new Button();
             SuspendLayout();
             // 
             // Pilih_Menu
@@ -48,20 +49,19 @@ namespace SiBadir
             Pilih_Menu.BackColor = Color.Transparent;
             Pilih_Menu.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Pilih_Menu.ForeColor = SystemColors.ButtonHighlight;
-            Pilih_Menu.Location = new Point(87, 227);
+            Pilih_Menu.Location = new Point(98, 228);
             Pilih_Menu.Margin = new Padding(4, 0, 4, 0);
             Pilih_Menu.Name = "Pilih_Menu";
-            Pilih_Menu.Size = new Size(185, 25);
+            Pilih_Menu.Size = new Size(156, 20);
             Pilih_Menu.TabIndex = 0;
             Pilih_Menu.Text = "Silakan pilih menu...";
             Pilih_Menu.TextAlign = ContentAlignment.MiddleCenter;
-            Pilih_Menu.Click += Pilih_Menu_Click;
             // 
             // bt_Daftar_Karyawan
             // 
             bt_Daftar_Karyawan.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_Daftar_Karyawan.ForeColor = Color.Black;
-            bt_Daftar_Karyawan.Location = new Point(52, 294);
+            bt_Daftar_Karyawan.Location = new Point(57, 348);
             bt_Daftar_Karyawan.Margin = new Padding(4);
             bt_Daftar_Karyawan.Name = "bt_Daftar_Karyawan";
             bt_Daftar_Karyawan.Size = new Size(242, 41);
@@ -74,7 +74,7 @@ namespace SiBadir
             // 
             bt_Lht_Stok_Bahan.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_Lht_Stok_Bahan.ForeColor = Color.Black;
-            bt_Lht_Stok_Bahan.Location = new Point(52, 361);
+            bt_Lht_Stok_Bahan.Location = new Point(57, 415);
             bt_Lht_Stok_Bahan.Margin = new Padding(4);
             bt_Lht_Stok_Bahan.Name = "bt_Lht_Stok_Bahan";
             bt_Lht_Stok_Bahan.Size = new Size(242, 41);
@@ -87,7 +87,7 @@ namespace SiBadir
             // 
             bt_History.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bt_History.ForeColor = Color.Black;
-            bt_History.Location = new Point(52, 425);
+            bt_History.Location = new Point(57, 479);
             bt_History.Margin = new Padding(4);
             bt_History.Name = "bt_History";
             bt_History.Size = new Size(242, 41);
@@ -115,21 +115,22 @@ namespace SiBadir
             Greeting.BackColor = Color.Transparent;
             Greeting.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Greeting.ForeColor = SystemColors.ControlLight;
-            Greeting.Location = new Point(14, 181);
+            Greeting.Location = new Point(36, 189);
             Greeting.Margin = new Padding(4, 0, 4, 0);
             Greeting.Name = "Greeting";
-            Greeting.Size = new Size(331, 46);
+            Greeting.Size = new Size(285, 39);
             Greeting.TabIndex = 5;
             Greeting.Text = "Selamat Datang!";
             Greeting.Click += Greeting_Click;
             // 
             // panel1
             // 
+            panel1.AutoScroll = true;
             panel1.BackColor = Color.IndianRed;
             panel1.BackgroundImageLayout = ImageLayout.None;
-            panel1.Location = new Point(355, -3);
+            panel1.Location = new Point(355, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1173, 882);
+            panel1.Size = new Size(1173, 700);
             panel1.TabIndex = 6;
             // 
             // label1
@@ -141,17 +142,16 @@ namespace SiBadir
             label1.Location = new Point(0, -3);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(87, 20);
+            label1.Size = new Size(77, 17);
             label1.TabIndex = 7;
             label1.Text = "Admin Ver.";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click;
             // 
             // btBack
             // 
             btBack.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btBack.ForeColor = Color.Red;
-            btBack.Location = new Point(43, 492);
+            btBack.Location = new Point(48, 546);
             btBack.Margin = new Padding(4);
             btBack.Name = "btBack";
             btBack.Size = new Size(257, 40);
@@ -160,13 +160,27 @@ namespace SiBadir
             btBack.UseVisualStyleBackColor = true;
             btBack.Click += btBack_Click;
             // 
+            // NotifikasiBtn
+            // 
+            NotifikasiBtn.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            NotifikasiBtn.ForeColor = Color.Black;
+            NotifikasiBtn.Location = new Point(57, 281);
+            NotifikasiBtn.Margin = new Padding(4);
+            NotifikasiBtn.Name = "NotifikasiBtn";
+            NotifikasiBtn.Size = new Size(242, 41);
+            NotifikasiBtn.TabIndex = 9;
+            NotifikasiBtn.Text = "Notifikasi";
+            NotifikasiBtn.UseVisualStyleBackColor = true;
+            NotifikasiBtn.Click += NotifikasiBtn_Click;
+            // 
             // Form_Menu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1525, 700);
+            Controls.Add(NotifikasiBtn);
             Controls.Add(btBack);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -195,5 +209,6 @@ namespace SiBadir
         private Panel panel1;
         private Label label1;
         private Button btBack;
+        private Button NotifikasiBtn;
     }
 }

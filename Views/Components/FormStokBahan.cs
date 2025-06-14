@@ -21,6 +21,8 @@ namespace SiBadir
         private List<Control> originalMenuContainerControls;
         private int _loggedInUserId;
 
+        public event Action? StokChanged;
+
         public FormStokBahan()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace SiBadir
             if (User.UserLoggedIn != null)
             {
                 _loggedInUserId = User.UserLoggedIn.IdUser;
-                MessageBox.Show($"User ID yang terbaca di FormStokBahan: {_loggedInUserId}", "Debug User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show($"User ID yang terbaca di FormStokBahan: {_loggedInUserId}", "Debug User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -53,7 +55,7 @@ namespace SiBadir
 
         private void LoadData()
         {
-            List<BahanDisplay> daftarBahan = StokBahanController.GetDataStokBahan();
+            List<Bahan> daftarBahan = StokBahanController.GetDataStokBahan();
             binding.DataSource = daftarBahan;
             dataGridViewBahan.DataSource = binding;
 
@@ -66,7 +68,8 @@ namespace SiBadir
             if (dataGridViewBahan.Columns.Contains("StokBahan"))
                 dataGridViewBahan.Columns["StokBahan"].HeaderText = "Stok";
             if (dataGridViewBahan.Columns.Contains("IdKategori"))
-                dataGridViewBahan.Columns["IdKategori"].HeaderText = "ID Kategori";
+                dataGridViewBahan.Columns["IdKategori"].Visible = false;
+            //    dataGridViewBahan.Columns["IdKategori"].HeaderText = "ID Kategori";
             if (dataGridViewBahan.Columns.Contains("IsActive"))
                 dataGridViewBahan.Columns["IsActive"].Visible = false;
         }
@@ -105,6 +108,7 @@ namespace SiBadir
             {
                 elementShow();
                 LoadData();
+                StokChanged?.Invoke();
             };
             //FormAddEditBahan formAdd = new FormAddEditBahan(_loggedInUserId);
             //if (formAdd.ShowDialog() == DialogResult.OK)
@@ -128,6 +132,7 @@ namespace SiBadir
                     {
                         elementShow();
                         LoadData();
+                        StokChanged?.Invoke();
                     };
                     SiBadir.Controller.FormController.LoadFormInPanel(this.MenuContainer2, formEdit);
                 }
@@ -154,7 +159,7 @@ namespace SiBadir
                             if (StokBahanController.HapusBahan(selectedBahan.IdBahan, _loggedInUserId))
                             {
                                 MessageBox.Show("Bahan berhasil dinonaktifkan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                LoadData(); // Muat ulang data setelah penghapusan berhasil
+                                LoadData();
                             }
                             else
                             {
@@ -169,14 +174,12 @@ namespace SiBadir
                 }
                 else
                 {
-                    // Kasus di mana SelectedRows.Count > 0 tapi DataBoundItem null (jarang terjadi tapi bisa)
                     MessageBox.Show("Data bahan yang dipilih tidak valid.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                // Hanya tampilkan pesan ini jika tidak ada baris yang dipilih sejak awal
-                //MessageBox.Show("Pilih bahan yang ingin dihapus.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Pilih bahan yang ingin dihapus.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

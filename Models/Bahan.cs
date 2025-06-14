@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SiBadir.Model
 {
-    public class Bahan
+    public class Bahan : KategoriBahan
     {
         public int IdBahan { get; set; }
         public string NamaBahan { get; set; }
         public string SatuanBahan { get; set; }
-        public int? IdKategori { get; set; }
         public int? IsActive { get; set; }
         public int StokBahan { get; set; }
     }

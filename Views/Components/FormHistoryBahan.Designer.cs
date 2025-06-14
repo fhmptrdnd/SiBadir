@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             dataGridViewHistory = new DataGridView();
-            btnRefreshHistory = new Button();
-            btnHapusHistory = new Button();
+            MenuPanel = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHistory).BeginInit();
             SuspendLayout();
             // 
@@ -38,41 +37,27 @@
             // 
             dataGridViewHistory.BackgroundColor = Color.IndianRed;
             dataGridViewHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewHistory.Location = new Point(-4, 165);
+            dataGridViewHistory.Location = new Point(-8, 241);
             dataGridViewHistory.Name = "dataGridViewHistory";
             dataGridViewHistory.RowHeadersWidth = 62;
-            dataGridViewHistory.Size = new Size(1205, 716);
+            dataGridViewHistory.Size = new Size(1215, 638);
             dataGridViewHistory.TabIndex = 0;
             dataGridViewHistory.CellContentClick += dataGridViewHistory_CellContentClick;
             // 
-            // btnRefreshHistory
+            // MenuPanel
             // 
-            btnRefreshHistory.Location = new Point(312, 43);
-            btnRefreshHistory.Name = "btnRefreshHistory";
-            btnRefreshHistory.Size = new Size(256, 66);
-            btnRefreshHistory.TabIndex = 1;
-            btnRefreshHistory.Text = "Refresh";
-            btnRefreshHistory.UseVisualStyleBackColor = true;
-            btnRefreshHistory.Click += btnRefreshHistory_Click;
-            // 
-            // btnHapusHistory
-            // 
-            btnHapusHistory.Location = new Point(646, 43);
-            btnHapusHistory.Name = "btnHapusHistory";
-            btnHapusHistory.Size = new Size(256, 66);
-            btnHapusHistory.TabIndex = 2;
-            btnHapusHistory.Text = "Hapus Riwayat";
-            btnHapusHistory.UseVisualStyleBackColor = true;
-            btnHapusHistory.Click += btnHapusHistory_Click;
+            MenuPanel.Location = new Point(0, 0);
+            MenuPanel.Name = "MenuPanel";
+            MenuPanel.Size = new Size(1196, 235);
+            MenuPanel.TabIndex = 3;
             // 
             // FormHistoryBahan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.IndianRed;
             ClientSize = new Size(1197, 875);
-            Controls.Add(btnHapusHistory);
-            Controls.Add(btnRefreshHistory);
+            Controls.Add(MenuPanel);
             Controls.Add(dataGridViewHistory);
             Name = "FormHistoryBahan";
             Text = "Form1";
@@ -83,7 +68,6 @@
         #endregion
 
         private DataGridView dataGridViewHistory;
-        private Button btnRefreshHistory;
-        private Button btnHapusHistory;
+        private Panel MenuPanel;
     }
 }

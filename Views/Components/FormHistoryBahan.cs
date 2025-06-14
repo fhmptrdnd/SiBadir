@@ -15,7 +15,7 @@ namespace SiBadir.View
 {
     public partial class FormHistoryBahan : Form
     {
-        private HistoryStokBahanRepository _historyRepo = new HistoryStokBahanRepository();
+        private HistoryRepository _historyRepo = new();
 
         public FormHistoryBahan()
         {
@@ -77,23 +77,23 @@ namespace SiBadir.View
 
                 if (selectedHistory != null)
                 {
-                    DialogResult confirm = MessageBox.Show($"Apakah Anda yakin ingin menghapus riwayat ID {selectedHistory.IdHistory} ({selectedHistory.JenisPerubahan})?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (confirm == DialogResult.Yes)
-                    {
-                        try
-                        {
-                            if (_historyRepo.Delete(selectedHistory.IdHistory))
-                            {
-                                MessageBox.Show("Riwayat berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                LoadHistoryData(); 
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show($"Gagal menghapus riwayat: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            Console.WriteLine($"Error saat menghapus riwayat: {ex.Message}");
-                        }
-                    }
+                    //DialogResult confirm = MessageBox.Show($"Apakah Anda yakin ingin menghapus riwayat ID {selectedHistory.IdHistory} ({selectedHistory.JenisPerubahan})?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    //if (confirm == DialogResult.Yes)
+                    //{
+                    //    try
+                    //    {
+                    //        //if (_historyRepo.Delete(selectedHistory.IdHistory))
+                    //        //{
+                    //        //    MessageBox.Show("Riwayat berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //        //    LoadHistoryData(); 
+                    //        //}
+                    //    }
+                    //    catch (Exception ex)
+                    //    {
+                    //        MessageBox.Show($"Gagal menghapus riwayat: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //        Console.WriteLine($"Error saat menghapus riwayat: {ex.Message}");
+                    //    }
+                    //}
                 }
             }
             else

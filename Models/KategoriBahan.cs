@@ -8,7 +8,7 @@ namespace SiBadir.Model
 {
     public class KategoriBahan
     {
-        public int IdKategori { get; set; }
+        public int? IdKategori { get; set; }
         public string NamaKategori { get; set; }
     }
 }

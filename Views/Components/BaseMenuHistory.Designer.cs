@@ -47,6 +47,7 @@
             // 
             labelMenu.AutoSize = true;
             labelMenu.Font = new Font("Arial", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(354, 9);
             labelMenu.Name = "labelMenu";
             labelMenu.Size = new Size(397, 39);
@@ -90,7 +91,7 @@
             // SearchJenisPerubahan
             // 
             SearchJenisPerubahan.FormattingEnabled = true;
-            SearchJenisPerubahan.Items.AddRange(new object[] { "Semua", "Penambahan", "Pengurangan" });
+            SearchJenisPerubahan.Items.AddRange(new object[] { "Semua", "Penambahan", "Pengurangan", "Perubahan Data Bahan" });
             SearchJenisPerubahan.Location = new Point(852, 127);
             SearchJenisPerubahan.Name = "SearchJenisPerubahan";
             SearchJenisPerubahan.Size = new Size(137, 28);
@@ -110,6 +111,7 @@
             // NamaBahanLabel
             // 
             NamaBahanLabel.AutoSize = true;
+            NamaBahanLabel.ForeColor = Color.White;
             NamaBahanLabel.Location = new Point(108, 85);
             NamaBahanLabel.Name = "NamaBahanLabel";
             NamaBahanLabel.Size = new Size(101, 20);
@@ -119,6 +121,7 @@
             // NamaUserLabel
             // 
             NamaUserLabel.AutoSize = true;
+            NamaUserLabel.ForeColor = Color.White;
             NamaUserLabel.Location = new Point(108, 130);
             NamaUserLabel.Name = "NamaUserLabel";
             NamaUserLabel.Size = new Size(89, 20);
@@ -128,6 +131,7 @@
             // TanggalPerubahanLabel
             // 
             TanggalPerubahanLabel.AutoSize = true;
+            TanggalPerubahanLabel.ForeColor = Color.White;
             TanggalPerubahanLabel.Location = new Point(460, 85);
             TanggalPerubahanLabel.Name = "TanggalPerubahanLabel";
             TanggalPerubahanLabel.Size = new Size(141, 20);
@@ -137,6 +141,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(460, 130);
             label1.Name = "label1";
             label1.Size = new Size(117, 20);
@@ -146,6 +151,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(726, 130);
             label2.Name = "label2";
             label2.Size = new Size(120, 20);
@@ -166,6 +172,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.IndianRed;
             ClientSize = new Size(1084, 235);
             Controls.Add(ResetBtn);
             Controls.Add(label2);
