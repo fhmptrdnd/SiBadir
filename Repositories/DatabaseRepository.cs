@@ -12,14 +12,24 @@ namespace SiBadir.Repositories
     {
         private static readonly string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=d1naraFahmi;Database=Si_Badir_New";
 
-        public static int Insert(string namaTable, string[] columns, object[] values, bool return_id = false)
+        public static int Insert(string namaTable, string[] columns, object[] values, bool return_id = false, bool notifikasi = false)
         {
             if (columns.Length != values.Length)
                 throw new ArgumentException("Jumlah kolom dan nilai tidak sama.");
 
             string columnList = string.Join(", ", columns);
-            string paramList = string.Join(", ", columns.Select((col, i) => $"@{i}"));
-            string query = $"INSERT INTO {namaTable} ({columnList}) VALUES ({paramList})";
+            string paramList = string.Join(", ", columns.Select((col, i) => $"@p{i}"));
+            string query;
+            if (notifikasi)
+            {
+                query = @"
+                    INSERT INTO notifikasi_stok (id_bahan, id_penerima)
+                    SELECT @p0, id_user FROM pengguna where is_active = 1";
+            }
+            else
+            {
+                query = $"INSERT INTO {namaTable} ({columnList}) VALUES ({paramList})";
+            }
 
             if (return_id)
             {
@@ -38,7 +48,7 @@ namespace SiBadir.Repositories
             {
                 for (int i = 0; i < values.Length; i++)
                 {
-                    cmd.Parameters.AddWithValue($"@{i}", values[i] ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue($"@p{i}", values[i] ?? DBNull.Value);
                 }
 
                 conn.Open();
@@ -64,7 +74,7 @@ namespace SiBadir.Repositories
                 {
                     for (int i = 0; i < parameters.Length; i++)
                     {
-                        cmd.Parameters.AddWithValue($"@{i}", parameters[i] ?? DBNull.Value);
+                        cmd.Parameters.AddWithValue($"@p{i}", parameters[i] ?? DBNull.Value);
                     }
                 }
 
@@ -82,26 +92,21 @@ namespace SiBadir.Repositories
             if (columns.Length != values.Length)
                 throw new ArgumentException("Jumlah kolom dan nilai tidak sama.");
 
-            // Gunakan nama parameter yang unik untuk SET clause
             string setClause = string.Join(", ", columns.Select((col, i) => $"{col} = @p_set_{i}"));
 
             string finalCondition = condition;
             List<NpgsqlParameter> allParameters = new List<NpgsqlParameter>();
 
-            // Tambahkan parameter untuk SET clause
             for (int i = 0; i < values.Length; i++)
             {
                 allParameters.Add(new NpgsqlParameter($"@p_set_{i}", values[i] ?? DBNull.Value));
             }
 
-            // Tambahkan parameter untuk WHERE clause
             if (conditionParams != null)
             {
                 for (int i = 0; i < conditionParams.Length; i++)
                 {
-                    // Pastikan placeholder di 'condition' adalah @0, @1, dst.
-                    // dan ganti dengan nama parameter yang unik untuk WHERE
-                    string oldParamPlaceholder = $"@{i}"; // Menggunakan @{i} karena BahanRepo.Update mengirim "id_bahan = @0"
+                    string oldParamPlaceholder = $"@c{i}";
                     string newParamName = $"@p_where_{i}";
                     finalCondition = finalCondition.Replace(oldParamPlaceholder, newParamName);
                     allParameters.Add(new NpgsqlParameter(newParamName, conditionParams[i] ?? DBNull.Value));
@@ -122,9 +127,9 @@ namespace SiBadir.Repositories
                             cmd.Transaction = transaksi;
                             cmd.Parameters.AddRange(allParameters.ToArray());
 
-                            int rowsAffected = cmd.ExecuteNonQuery(); // Tangkap jumlah baris yang terpengaruh
+                            int rowsAffected = cmd.ExecuteNonQuery();
                             transaksi.Commit();
-                            return rowsAffected > 0; // Mengembalikan true hanya jika ada baris yang diupdate
+                            return rowsAffected > 0;
                         }
                     }
                 }
@@ -132,21 +137,17 @@ namespace SiBadir.Repositories
             catch (Exception ex)
             {
                 Console.WriteLine($"ERROR & ROLLBACK: Gagal update tabel {tableName}. Pesan: {ex.Message}");
-                // Penting: Melempar exception agar controller dapat menangkapnya
                 throw;
             }
         }
 
         public static bool Delete(string tableName, string condition, object[] conditionParams)
         {
-            // Jika ini digunakan untuk logical delete (misalnya bahan), maka akan memanggil Update
-            // Parameter 'condition' harus menggunakan '@0', '@1', dst. (misalnya "id_bahan = @0")
             if (tableName == "bahan" && condition.StartsWith("id_bahan = @0"))
             {
-                // Memanggil metode Update yang sama
                 return Update(tableName, new[] { "is_active" }, new object[] { 0 }, condition, conditionParams);
             }
-            else // Ini adalah logika DELETE fisik
+            else
             {
                 string query = $"DELETE FROM {tableName} WHERE {condition}";
 
@@ -163,7 +164,7 @@ namespace SiBadir.Repositories
 
                     conn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0; // Mengembalikan true jika ada baris yang dihapus
+                    return rowsAffected > 0;
                 }
             }
         }

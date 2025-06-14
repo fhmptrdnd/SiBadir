@@ -19,6 +19,7 @@ namespace SiBadir
         private void LoadData()
         {
             binding.DataSource = MenuKaryawanController.GetDataKaryawan();
+            DataKaryawan.AutoGenerateColumns = false;
             DataKaryawan.DataSource = binding;
         }
 
@@ -41,6 +42,12 @@ namespace SiBadir
             Hapus_Karyawan.Click += Hapus_Karyawan_Click;
             Edit_Karyawan.Click += Edit_Karyawan_Click;
             Tambah_Karyawan.Click += Tambah_Karyawan_Click;
+            if (User.UserLoggedIn.Role != "admin")
+            {
+                Hapus_Karyawan.Hide();
+                Edit_Karyawan.Hide();
+                Tambah_Karyawan.Hide();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

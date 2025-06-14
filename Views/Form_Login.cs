@@ -25,33 +25,16 @@ namespace SiBadir
 
             try
             {
-                // ini buat cek error atau ngga aja, valid atau ngganya usn/pswrd yg diinpput, bisa dicomment
-                //MessageBox.Show($"Username: '{usernameInput}'\nPassword: '{passwordInput}'");
-
-                //DatabaseConnectionUser login = new DatabaseConnectionUser(usernameInput, passwordInput);
-                //login.openConnection();
-                //NpgsqlDataReader reader = login.execQuery();
-
                 PenggunaRepository penggunaRepo = new PenggunaRepository();
                 Pengguna akun = penggunaRepo.GetByUsernameAndPassword(usernameInput, passwordInput);
 
                 if (akun != null)
                 {
                     User.UserLoggedIn = akun;
-
-                    if (akun.Role == "admin")
-                    {
-                        // Sembunyikan Form1 dan tampilkan Form2
-                        this.Hide();
-                        Form_Menu form2 = new Form_Menu();
-                        //form2.LoggedInUsername = akun.NamaUser;
-                        form2.FormClosed += (s, args) => this.Close(); // Tutup aplikasi jika Form2 ditutup
-                        form2.Show();
-                    }
-                    else if (akun.Role == "karyawan")
-                    {
-
-                    }
+                    this.Hide();
+                    Form_Menu form2 = new Form_Menu();
+                    form2.FormClosed += (s, args) => this.Close(); // Tutup aplikasi jika Form2 ditutup
+                    form2.Show();
                 }
                 else
                 {
