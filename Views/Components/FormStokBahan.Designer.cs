@@ -45,10 +45,10 @@
             labelMenu.BackColor = Color.Transparent;
             labelMenu.Font = new Font("Arial", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelMenu.ForeColor = SystemColors.ControlLightLight;
-            labelMenu.Location = new Point(432, 20);
-            labelMenu.Margin = new Padding(4, 0, 4, 0);
+            labelMenu.Location = new Point(540, 25);
+            labelMenu.Margin = new Padding(5, 0, 5, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(284, 39);
+            labelMenu.Size = new Size(332, 45);
             labelMenu.TabIndex = 5;
             labelMenu.Text = "Menu Stok Bahan";
             // 
@@ -59,28 +59,28 @@
             MenuContainer2.Controls.Add(labelMenu);
             MenuContainer2.Controls.Add(btnEditBahan);
             MenuContainer2.Controls.Add(btnTambahBahan);
-            MenuContainer2.Location = new Point(-5, -1);
-            MenuContainer2.Margin = new Padding(4);
+            MenuContainer2.Location = new Point(-6, -1);
+            MenuContainer2.Margin = new Padding(5, 5, 5, 5);
             MenuContainer2.Name = "MenuContainer2";
-            MenuContainer2.Size = new Size(1163, 294);
+            MenuContainer2.Size = new Size(1454, 368);
             MenuContainer2.TabIndex = 6;
             // 
             // btnHapusBahan
             // 
-            btnHapusBahan.Location = new Point(797, 84);
-            btnHapusBahan.Margin = new Padding(4);
+            btnHapusBahan.Location = new Point(996, 105);
+            btnHapusBahan.Margin = new Padding(5, 5, 5, 5);
             btnHapusBahan.Name = "btnHapusBahan";
-            btnHapusBahan.Size = new Size(220, 138);
+            btnHapusBahan.Size = new Size(275, 172);
             btnHapusBahan.TabIndex = 6;
             btnHapusBahan.Text = "Hapus Data Bahan";
             btnHapusBahan.UseVisualStyleBackColor = true;
             // 
             // btnEditBahan
             // 
-            btnEditBahan.Location = new Point(487, 84);
-            btnEditBahan.Margin = new Padding(4);
+            btnEditBahan.Location = new Point(609, 105);
+            btnEditBahan.Margin = new Padding(5, 5, 5, 5);
             btnEditBahan.Name = "btnEditBahan";
-            btnEditBahan.Size = new Size(220, 138);
+            btnEditBahan.Size = new Size(275, 172);
             btnEditBahan.TabIndex = 2;
             btnEditBahan.Text = "Edit Data Bahan";
             btnEditBahan.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // btnTambahBahan
             // 
             btnTambahBahan.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTambahBahan.Location = new Point(179, 84);
-            btnTambahBahan.Margin = new Padding(4);
+            btnTambahBahan.Location = new Point(224, 105);
+            btnTambahBahan.Margin = new Padding(5, 5, 5, 5);
             btnTambahBahan.Name = "btnTambahBahan";
-            btnTambahBahan.Size = new Size(220, 138);
+            btnTambahBahan.Size = new Size(275, 172);
             btnTambahBahan.TabIndex = 1;
             btnTambahBahan.Text = "Tambah Data Bahan";
             btnTambahBahan.UseVisualStyleBackColor = true;
@@ -114,20 +114,21 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dataGridViewBahan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewBahan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBahan.Location = new Point(-5, 291);
-            dataGridViewBahan.Margin = new Padding(4);
+            dataGridViewBahan.Location = new Point(-6, 364);
+            dataGridViewBahan.Margin = new Padding(5, 5, 5, 5);
             dataGridViewBahan.Name = "dataGridViewBahan";
             dataGridViewBahan.RowHeadersWidth = 51;
-            dataGridViewBahan.Size = new Size(1163, 418);
+            dataGridViewBahan.Size = new Size(1454, 515);
             dataGridViewBahan.TabIndex = 5;
             // 
             // FormStokBahan
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1155, 705);
+            ClientSize = new Size(1444, 794);
             Controls.Add(MenuContainer2);
             Controls.Add(dataGridViewBahan);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FormStokBahan";
             Text = "Form1";
             MenuContainer2.ResumeLayout(false);

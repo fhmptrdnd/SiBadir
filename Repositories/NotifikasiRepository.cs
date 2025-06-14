@@ -19,8 +19,8 @@ namespace SiBadir.Repositories
                             SELECT
                                 ns.*,
                                 CASE
-                                    WHEN ns.is_read = 0 THEN '** Stok ' || b.nama_bahan || ' sudah dibawah 20 ' || b.satuan_bahan || '!!'
-                                    WHEN ns.is_read = 1 THEN 'Stok ' || b.nama_bahan || ' sudah dibawah 20 ' || b.satuan_bahan || '!!'
+                                    WHEN ns.is_read = 0 THEN '** Stok ' || b.nama_bahan || ' sudah dibawah 10 ' || b.satuan_bahan || '!!'
+                                    WHEN ns.is_read = 1 THEN 'Stok ' || b.nama_bahan || ' sudah dibawah 10 ' || b.satuan_bahan || '!!'
                                 END AS Pesan
                             FROM
                                 notifikasi_stok ns

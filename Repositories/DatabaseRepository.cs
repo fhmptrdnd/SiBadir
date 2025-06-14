@@ -10,7 +10,7 @@ namespace SiBadir.Repositories
 {
     public static class DatabaseRepository
     {
-        private static readonly string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=BaksoNjedir";
+        private static readonly string _connectionString = "Host=localhost;Port=5432;Username=postgres;Password=d1naraFahmi;Database=Si_Badir_New";
 
         public static int Insert(string namaTable, string[] columns, object[] values, bool return_id = false, bool notifikasi = false)
         {
