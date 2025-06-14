@@ -48,7 +48,7 @@
             labelMenu.Location = new Point(432, 20);
             labelMenu.Margin = new Padding(4, 0, 4, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(332, 45);
+            labelMenu.Size = new Size(284, 39);
             labelMenu.TabIndex = 5;
             labelMenu.Text = "Menu Stok Bahan";
             // 
@@ -62,7 +62,7 @@
             MenuContainer2.Location = new Point(-5, -1);
             MenuContainer2.Margin = new Padding(4);
             MenuContainer2.Name = "MenuContainer2";
-            MenuContainer2.Size = new Size(1206, 294);
+            MenuContainer2.Size = new Size(1163, 294);
             MenuContainer2.TabIndex = 6;
             // 
             // btnHapusBahan
@@ -74,7 +74,6 @@
             btnHapusBahan.TabIndex = 6;
             btnHapusBahan.Text = "Hapus Data Bahan";
             btnHapusBahan.UseVisualStyleBackColor = true;
-            btnHapusBahan.Click += btnHapusBahan_Click;
             // 
             // btnEditBahan
             // 
@@ -119,14 +118,14 @@
             dataGridViewBahan.Margin = new Padding(4);
             dataGridViewBahan.Name = "dataGridViewBahan";
             dataGridViewBahan.RowHeadersWidth = 51;
-            dataGridViewBahan.Size = new Size(1206, 585);
+            dataGridViewBahan.Size = new Size(1163, 418);
             dataGridViewBahan.TabIndex = 5;
             // 
             // FormStokBahan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1197, 875);
+            ClientSize = new Size(1155, 705);
             Controls.Add(MenuContainer2);
             Controls.Add(dataGridViewBahan);
             Name = "FormStokBahan";

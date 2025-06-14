@@ -19,6 +19,7 @@ namespace SiBadir.Views.Components
         private void LoadData()
         {
             binding.DataSource = MenuHistoryController.GetDataHistory();
+            DataHistory.AutoGenerateColumns = false;
             DataHistory.DataSource = binding;
         }
 
@@ -34,6 +35,11 @@ namespace SiBadir.Views.Components
         {
             binding.DataSource = dataHasilPencarian;
             binding.ResetBindings(false);
+        }
+
+        private void MenuPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

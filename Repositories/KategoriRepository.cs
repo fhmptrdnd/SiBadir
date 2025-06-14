@@ -8,7 +8,7 @@ using SiBadir.Model;
 
 namespace SiBadir.Repositories
 {
-    internal class KategoriRepository
+    internal class KategoriRepository : Interfaces.IKategoriRepository
     {
         public List<string> GetNamaKategori()
         {

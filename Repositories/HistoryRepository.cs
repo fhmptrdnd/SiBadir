@@ -5,35 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using SiBadir.Interfaces;
 using SiBadir.Model;
 
 namespace SiBadir.Repositories
 {
-    internal class HistoryRepository
+    internal class HistoryRepository : IHistoryRepository
     {
-        //public List<HistoryStokBahan> GetAll()
-        //{
-        //    var dt = DatabaseRepository.Select("SELECT * FROM history_stok_bahan ORDER BY tanggal_perubahan DESC");
-        //    var list = new List<HistoryStokBahan>();
-
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        list.Add(RowToHistory(row));
-        //    }
-
-        //    return list;
-        //}
-        private HistoryStokBahan RowToHistory(DataRow row)
+        public HistoryStokBahan RowToHistory(DataRow row)
         {
             return new HistoryStokBahan
             {
                 IdHistory = Convert.ToInt32(row["ID History"]),
+                IdBahan = Convert.ToInt32(row["ID Bahan"]),
+                IdUser = Convert.ToInt32(row["ID User"]),
                 TanggalPerubahan = Convert.ToDateTime(row["Tanggal Perubahan"]),
-                //NamaBahan = row["Nama Bahan"]?.ToString() ?? "Data Bahan Hilang",
+                NamaBahan = row["Nama Bahan"]?.ToString() ?? "Data Bahan Hilang",
                 JenisPerubahan = row["Jenis Perubahan"]?.ToString() ?? "",
                 StokSebelum = Convert.ToInt32(row["Stok Sebelum"]),
                 StokSesudah = Convert.ToInt32(row["Stok Sesudah"]),
-                //NamaUser = row["User"]?.ToString() ?? "User Tidak Diketahui",
+                NamaUser = row["User"]?.ToString() ?? "User Tidak Diketahui",
                 Keterangan = row["Keterangan"]?.ToString() ?? ""
             };
         }
@@ -42,6 +33,8 @@ namespace SiBadir.Repositories
             string query = """
             SELECT
                 h.id_history AS "ID History",
+                h.id_bahan AS "ID Bahan",
+                h.id_user AS "ID User",
                 h.tanggal_perubahan AS "Tanggal Perubahan",
                 b.nama_bahan AS "Nama Bahan",
                 h.jenis_perubahan AS "Jenis Perubahan",
@@ -94,6 +87,8 @@ namespace SiBadir.Repositories
             }
 
             query += " ORDER BY h.tanggal_perubahan DESC, h.id_history DESC";
+            //MessageBox.Show($"{parameterValues} {nama_bahan}", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             var dt = DatabaseRepository.Select(query, parameterValues.ToArray());
 
             var list = new List<HistoryStokBahan>();
@@ -102,6 +97,22 @@ namespace SiBadir.Repositories
                 list.Add(RowToHistory(row));
             }
             return list;
+        }
+        public void Insert(HistoryStokBahan history)
+        {
+            var columns = new List<string> { "id_bahan", "id_user", "stok_sebelum", "stok_sesudah", "jenis_perubahan", "keterangan" };
+            var values = new List<object> {
+                history.IdBahan.HasValue ? (object)history.IdBahan.Value : DBNull.Value,
+                history.IdUser.HasValue ? (object)history.IdUser.Value : DBNull.Value,
+                history.StokSebelum.HasValue ? (object)history.StokSebelum.Value : DBNull.Value,
+                history.StokSesudah.HasValue ? (object)history.StokSesudah.Value : DBNull.Value,
+                history.JenisPerubahan,
+                history.Keterangan
+            };
+
+            DatabaseRepository.Insert("history_stok_bahan",
+                columns.ToArray(),
+                values.ToArray());
         }
     }
 }

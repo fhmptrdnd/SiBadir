@@ -38,8 +38,8 @@
             labelMenu = new Label();
             SatuanBahanTextBox = new TextBox();
             label4 = new Label();
-            IdKategoriTextBox = new TextBox();
-            label5 = new Label();
+            label6 = new Label();
+            SelectKategori = new ComboBox();
             SuspendLayout();
             // 
             // SubmitBtn
@@ -58,7 +58,7 @@
             StokBahanTextBox.Location = new Point(576, 145);
             StokBahanTextBox.Margin = new Padding(4);
             StokBahanTextBox.Name = "StokBahanTextBox";
-            StokBahanTextBox.Size = new Size(198, 31);
+            StokBahanTextBox.Size = new Size(198, 27);
             StokBahanTextBox.TabIndex = 15;
             // 
             // label2
@@ -68,7 +68,7 @@
             label2.Location = new Point(395, 149);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(100, 25);
+            label2.Size = new Size(83, 20);
             label2.TabIndex = 14;
             label2.Text = "Stok Bahan";
             // 
@@ -79,7 +79,7 @@
             label1.Location = new Point(395, 110);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(112, 25);
+            label1.Size = new Size(94, 20);
             label1.TabIndex = 13;
             label1.Text = "Nama Bahan";
             // 
@@ -88,7 +88,7 @@
             NamaBahanTextBox.Location = new Point(576, 106);
             NamaBahanTextBox.Margin = new Padding(4);
             NamaBahanTextBox.Name = "NamaBahanTextBox";
-            NamaBahanTextBox.Size = new Size(198, 31);
+            NamaBahanTextBox.Size = new Size(198, 27);
             NamaBahanTextBox.TabIndex = 12;
             // 
             // Return_Button
@@ -106,7 +106,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(643, 40);
             label3.Name = "label3";
-            label3.Size = new Size(0, 25);
+            label3.Size = new Size(0, 20);
             label3.TabIndex = 17;
             // 
             // labelMenu
@@ -118,7 +118,7 @@
             labelMenu.Location = new Point(428, 20);
             labelMenu.Margin = new Padding(4, 0, 4, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(285, 45);
+            labelMenu.Size = new Size(240, 39);
             labelMenu.TabIndex = 18;
             labelMenu.Text = "Tambah Bahan";
             labelMenu.Click += labelMenu_Click;
@@ -128,7 +128,7 @@
             SatuanBahanTextBox.Location = new Point(576, 184);
             SatuanBahanTextBox.Margin = new Padding(4);
             SatuanBahanTextBox.Name = "SatuanBahanTextBox";
-            SatuanBahanTextBox.Size = new Size(198, 31);
+            SatuanBahanTextBox.Size = new Size(198, 27);
             SatuanBahanTextBox.TabIndex = 20;
             // 
             // label4
@@ -138,37 +138,37 @@
             label4.Location = new Point(395, 184);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(119, 25);
+            label4.Size = new Size(99, 20);
             label4.TabIndex = 19;
             label4.Text = "Satuan Bahan";
             // 
-            // IdKategoriTextBox
+            // label6
             // 
-            IdKategoriTextBox.Location = new Point(576, 223);
-            IdKategoriTextBox.Margin = new Padding(4);
-            IdKategoriTextBox.Name = "IdKategoriTextBox";
-            IdKategoriTextBox.Size = new Size(198, 31);
-            IdKategoriTextBox.TabIndex = 22;
+            label6.AutoSize = true;
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(395, 226);
+            label6.Name = "label6";
+            label6.Size = new Size(117, 20);
+            label6.TabIndex = 24;
+            label6.Text = "Nama Kategori :";
             // 
-            // label5
+            // SelectKategori
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(395, 223);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(101, 25);
-            label5.TabIndex = 21;
-            label5.Text = "ID Kategori";
+            SelectKategori.FormattingEnabled = true;
+            SelectKategori.Location = new Point(576, 223);
+            SelectKategori.Name = "SelectKategori";
+            SelectKategori.Size = new Size(137, 28);
+            SelectKategori.TabIndex = 23;
+            SelectKategori.Text = "Semua";
             // 
             // FormAddEditBahan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.IndianRed;
             ClientSize = new Size(1197, 294);
-            Controls.Add(IdKategoriTextBox);
-            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(SelectKategori);
             Controls.Add(SatuanBahanTextBox);
             Controls.Add(label4);
             Controls.Add(labelMenu);
@@ -197,7 +197,7 @@
         private Label labelMenu;
         private TextBox SatuanBahanTextBox;
         private Label label4;
-        private TextBox IdKategoriTextBox;
-        private Label label5;
+        private Label label6;
+        private ComboBox SelectKategori;
     }
 }

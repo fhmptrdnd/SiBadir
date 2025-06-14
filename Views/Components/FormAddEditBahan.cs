@@ -16,14 +16,18 @@ namespace SiBadir.View
     {
         private readonly bool _editMode;
         private Bahan? _bahan;
-        private int _loggedInUserId; 
+        private int _loggedInUserId;
         public FormAddEditBahan(int loggedInUserId)
         {
             InitializeComponent();
+            SelectKategori.Items.Clear();
+            SelectKategori.Items.AddRange(MenuHistoryController.getListKategori().ToArray());
+            SelectKategori.SelectedIndex = 0;
+
             _editMode = false;
             SubmitBtn.Text = "Tambah Bahan";
             labelMenu.Text = "Tambah Data Bahan";
-            StokBahanTextBox.Text = "0"; 
+            StokBahanTextBox.Text = "0";
 
             _loggedInUserId = loggedInUserId;
 
@@ -35,6 +39,9 @@ namespace SiBadir.View
         public FormAddEditBahan(Bahan? bahan, int loggedInUserId)
         {
             InitializeComponent();
+            SelectKategori.Items.Clear();
+            SelectKategori.Items.AddRange(MenuHistoryController.getListKategori().ToArray());
+            SelectKategori.SelectedIndex = 0;
 
             _editMode = true;
             _bahan = bahan;
@@ -45,9 +52,10 @@ namespace SiBadir.View
 
             if (_bahan != null)
             {
+                //int IdKategori = MenuHistoryController.checkKategori(SelectKategori.SelectedItem?.ToString());
                 NamaBahanTextBox.Text = _bahan.NamaBahan;
                 SatuanBahanTextBox.Text = _bahan.SatuanBahan;
-                IdKategoriTextBox.Text = _bahan.IdKategori.HasValue ? _bahan.IdKategori.Value.ToString() : "";
+                //IdKategoriTextBox.Text = _bahan.IdKategori.HasValue ? _bahan.IdKategori.Value.ToString() : "";
                 StokBahanTextBox.Text = _bahan.StokBahan.ToString();
             }
 
@@ -61,27 +69,23 @@ namespace SiBadir.View
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
+            int id_kategori = MenuHistoryController.checkKategori(SelectKategori.SelectedItem?.ToString());
             if (string.IsNullOrWhiteSpace(NamaBahanTextBox.Text) ||
                 string.IsNullOrWhiteSpace(SatuanBahanTextBox.Text) ||
-                string.IsNullOrWhiteSpace(IdKategoriTextBox.Text) ||
+                string.IsNullOrWhiteSpace(id_kategori.ToString()) ||
                 string.IsNullOrWhiteSpace(StokBahanTextBox.Text))
             {
                 MessageBox.Show("Semua kolom harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(IdKategoriTextBox.Text, out int idKategori) || idKategori <= 0)
-            {
-                MessageBox.Show("ID Kategori harus berupa angka bulat positif!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (!int.TryParse(IdKategoriTextBox.Text, out int idKategori) || idKategori <= 0)
+            //{
+            //    MessageBox.Show("ID Kategori harus berupa angka bulat positif!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
 
             if (!int.TryParse(StokBahanTextBox.Text, out int stokBahan) || stokBahan < 0)
             {
@@ -97,7 +101,7 @@ namespace SiBadir.View
                     {
                         _bahan.NamaBahan = NamaBahanTextBox.Text.Trim();
                         _bahan.SatuanBahan = SatuanBahanTextBox.Text.Trim();
-                        _bahan.IdKategori = idKategori;
+                        _bahan.IdKategori = id_kategori;
                         _bahan.StokBahan = stokBahan;
 
                         if (StokBahanController.EditBahan(_bahan, _loggedInUserId))
@@ -112,12 +116,12 @@ namespace SiBadir.View
                         }
                     }
                 }
-                else 
+                else
                 {
-                    if (StokBahanController.TambahBahan(NamaBahanTextBox.Text, SatuanBahanTextBox.Text, idKategori, stokBahan, _loggedInUserId))
+                    if (StokBahanController.TambahBahan(NamaBahanTextBox.Text, SatuanBahanTextBox.Text, id_kategori, stokBahan, _loggedInUserId))
                     {
                         MessageBox.Show("Bahan berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.DialogResult = DialogResult.OK; 
+                        this.DialogResult = DialogResult.OK;
                         this.Close();
                     }
                     else
@@ -126,7 +130,7 @@ namespace SiBadir.View
                     }
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error Operasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -251,16 +251,17 @@ namespace SiBadir.Controllers
     //    }
         public class StokBahanController
         {
-            private static BahanRepository _bahanRepo = new BahanRepository();
-            private static HistoryStokBahanRepository _historyRepo = new HistoryStokBahanRepository();
+            private static BahanRepository _bahanRepo = new ();
+            private static HistoryRepository _historyRepo = new ();
+            private static NotifikasiRepository _notifikasiRepo = new();
 
-            // Metode untuk mendapatkan data stok bahan beserta nama kategori untuk tampilan DataGridView
-            public static List<BahanDisplay> GetDataStokBahan()
+        // Metode untuk mendapatkan data stok bahan beserta nama kategori untuk tampilan DataGridView
+        public static List<Bahan> GetDataStokBahan()
             {
                 try
                 {
                     // Memanggil metode GetAllBahanDisplay dari BahanRepository
-                    return _bahanRepo.GetAllBahanDisplay();
+                    return _bahanRepo.GetAll();
                 }
                 catch (Exception ex)
                 {
@@ -292,8 +293,20 @@ namespace SiBadir.Controllers
                         IsActive = 1
                     };
 
-                    // Memasukkan bahan ke database dan mendapatkan ID yang baru di-generate
-                    int newBahanId = _bahanRepo.Insert(newBahan);
+
+                // Memasukkan bahan ke database dan mendapatkan ID yang baru di-generate
+                int newBahanId = _bahanRepo.Add(newBahan);
+
+                if (newBahan.StokBahan <= 10)
+                {
+                    // Jika stok baru <= 10, tambahkan notifikasi
+                    _notifikasiRepo.insertNotifikasi(new NotifikasiStok
+                    {
+                        IdBahan = newBahanId,
+                        IsRead = 0,
+                        TanggalNotifikasi = DateTime.Now
+                    });
+                }
 
                     // Mencatat riwayat penambahan bahan
                     _historyRepo.Insert(new HistoryStokBahan
@@ -302,7 +315,7 @@ namespace SiBadir.Controllers
                         IdUser = idUser,
                         StokSebelum = 0, // Stok sebelum penambahan bahan baru (biasanya 0)
                         StokSesudah = stokBahan, // Stok sesudah penambahan, sesuai inputan
-                        JenisPerubahan = "Penambahan Bahan",
+                        JenisPerubahan = "Penambahan",
                         Keterangan = $"Menambah bahan baru: '{namaBahan.Trim()}' dengan satuan '{satuanBahan.Trim()}' dan stok awal {stokBahan}."
                     });
 
@@ -358,6 +371,16 @@ namespace SiBadir.Controllers
                     if (oldBahan.StokBahan != bahan.StokBahan)
                     {
                         changes += $"Stok dari {oldBahan.StokBahan} menjadi {bahan.StokBahan}. ";
+                        if (bahan.StokBahan <= 10) 
+                        {
+                            // Jika stok baru <= 10, tambahkan notifikasi
+                            _notifikasiRepo.insertNotifikasi(new NotifikasiStok
+                            {
+                                IdBahan = bahan.IdBahan,
+                                IsRead = 0,
+                                TanggalNotifikasi = DateTime.Now
+                            });
+                        }
                     }
 
                     // Menentukan keterangan akhir untuk riwayat
@@ -365,6 +388,15 @@ namespace SiBadir.Controllers
                                              $"Tidak ada perubahan data spesifik untuk bahan '{bahan.NamaBahan}'." :
                                              $"Mengubah data bahan '{bahan.NamaBahan}': {changes.Trim()}";
 
+                    string jenisPerubahan = "Perubahan Data";
+                    if (oldBahan.StokBahan > bahan.StokBahan)
+                    {
+                        jenisPerubahan = "Pengurangan";
+                    }
+                    else if (oldBahan.StokBahan < bahan.StokBahan)
+                    {
+                        jenisPerubahan = "Penambahan";
+                    }
                     // Mencatat riwayat perubahan data bahan
                     _historyRepo.Insert(new HistoryStokBahan
                     {
@@ -372,7 +404,7 @@ namespace SiBadir.Controllers
                         IdUser = idUser,
                         StokSebelum = oldBahan.StokBahan,
                         StokSesudah = bahan.StokBahan,
-                        JenisPerubahan = "Perubahan Data Bahan",
+                        JenisPerubahan = jenisPerubahan,
                         Keterangan = finalKeterangan
                     });
 

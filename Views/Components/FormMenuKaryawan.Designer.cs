@@ -30,6 +30,9 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataKaryawan = new DataGridView();
+            Nama = new DataGridViewTextBoxColumn();
+            Alamat = new DataGridViewTextBoxColumn();
+            Role = new DataGridViewTextBoxColumn();
             Tambah_Karyawan = new Button();
             Edit_Karyawan = new Button();
             Hapus_Karyawan = new Button();
@@ -56,12 +59,37 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             DataKaryawan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DataKaryawan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DataKaryawan.Columns.AddRange(new DataGridViewColumn[] { Nama, Alamat, Role });
             DataKaryawan.Location = new Point(-6, 292);
             DataKaryawan.Margin = new Padding(4);
             DataKaryawan.Name = "DataKaryawan";
             DataKaryawan.RowHeadersWidth = 51;
-            DataKaryawan.Size = new Size(1206, 585);
+            DataKaryawan.Size = new Size(1161, 416);
             DataKaryawan.TabIndex = 0;
+            // 
+            // Nama
+            // 
+            Nama.DataPropertyName = "NamaUser";
+            Nama.HeaderText = "Nama";
+            Nama.MinimumWidth = 6;
+            Nama.Name = "Nama";
+            Nama.Width = 125;
+            // 
+            // Alamat
+            // 
+            Alamat.DataPropertyName = "AlamatUser";
+            Alamat.HeaderText = "Alamat";
+            Alamat.MinimumWidth = 6;
+            Alamat.Name = "Alamat";
+            Alamat.Width = 125;
+            // 
+            // Role
+            // 
+            Role.DataPropertyName = "Role";
+            Role.HeaderText = "Role";
+            Role.MinimumWidth = 6;
+            Role.Name = "Role";
+            Role.Width = 125;
             // 
             // Tambah_Karyawan
             // 
@@ -84,7 +112,6 @@
             Edit_Karyawan.TabIndex = 2;
             Edit_Karyawan.Text = "Edit Data Karyawan";
             Edit_Karyawan.UseVisualStyleBackColor = true;
-            Edit_Karyawan.Click += Edit_Karyawan_Click;
             // 
             // Hapus_Karyawan
             // 
@@ -107,7 +134,7 @@
             MenuContainer.Location = new Point(0, 0);
             MenuContainer.Margin = new Padding(4);
             MenuContainer.Name = "MenuContainer";
-            MenuContainer.Size = new Size(1200, 294);
+            MenuContainer.Size = new Size(1159, 294);
             MenuContainer.TabIndex = 4;
             MenuContainer.Paint += panel1_Paint;
             // 
@@ -120,15 +147,15 @@
             labelMenu.Location = new Point(438, 22);
             labelMenu.Margin = new Padding(4, 0, 4, 0);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(303, 45);
+            labelMenu.Size = new Size(258, 39);
             labelMenu.TabIndex = 5;
             labelMenu.Text = "Menu Karyawan";
             // 
             // FormMenuKaryawan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1197, 875);
+            ClientSize = new Size(1155, 705);
             Controls.Add(MenuContainer);
             Controls.Add(DataKaryawan);
             Margin = new Padding(4);
@@ -149,5 +176,8 @@
         private Button Hapus_Karyawan;
         private Panel MenuContainer;
         private Label labelMenu;
+        private DataGridViewTextBoxColumn Nama;
+        private DataGridViewTextBoxColumn Alamat;
+        private DataGridViewTextBoxColumn Role;
     }
 }
