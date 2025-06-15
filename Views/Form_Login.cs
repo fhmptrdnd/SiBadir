@@ -12,7 +12,7 @@ namespace SiBadir
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string usernameInput = textBox2.Text.Trim().ToLower();
             string passwordInput = textBox1.Text.Trim();
