@@ -49,13 +49,14 @@ namespace SiBadir
             Pilih_Menu.BackColor = Color.Transparent;
             Pilih_Menu.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Pilih_Menu.ForeColor = SystemColors.ButtonHighlight;
-            Pilih_Menu.Location = new Point(98, 228);
+            Pilih_Menu.Location = new Point(86, 228);
             Pilih_Menu.Margin = new Padding(4, 0, 4, 0);
             Pilih_Menu.Name = "Pilih_Menu";
-            Pilih_Menu.Size = new Size(156, 20);
+            Pilih_Menu.Size = new Size(185, 25);
             Pilih_Menu.TabIndex = 0;
             Pilih_Menu.Text = "Silakan pilih menu...";
             Pilih_Menu.TextAlign = ContentAlignment.MiddleCenter;
+            Pilih_Menu.Click += Pilih_Menu_Click;
             // 
             // bt_Daftar_Karyawan
             // 
@@ -115,10 +116,10 @@ namespace SiBadir
             Greeting.BackColor = Color.Transparent;
             Greeting.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Greeting.ForeColor = SystemColors.ControlLight;
-            Greeting.Location = new Point(36, 189);
+            Greeting.Location = new Point(13, 182);
             Greeting.Margin = new Padding(4, 0, 4, 0);
             Greeting.Name = "Greeting";
-            Greeting.Size = new Size(285, 39);
+            Greeting.Size = new Size(331, 46);
             Greeting.TabIndex = 5;
             Greeting.Text = "Selamat Datang!";
             Greeting.Click += Greeting_Click;
@@ -142,10 +143,10 @@ namespace SiBadir
             label1.Location = new Point(0, -3);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(77, 17);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 7;
-            label1.Text = "Admin Ver.";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // btBack
             // 
@@ -175,7 +176,7 @@ namespace SiBadir
             // 
             // Form_Menu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");

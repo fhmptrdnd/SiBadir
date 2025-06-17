@@ -64,6 +64,22 @@ namespace SiBadir.View
             this.Load += FormAddEditBahan_Load;
         }
 
+        public Bahan Bahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public MenuHistoryController MenuHistoryController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Return_Button_Click(object sender, EventArgs e)
         {
             this.Close();

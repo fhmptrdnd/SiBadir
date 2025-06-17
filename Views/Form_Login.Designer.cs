@@ -32,6 +32,7 @@
             button1 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -63,13 +64,27 @@
             textBox2.TabIndex = 3;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(236, 82, 82);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(99, 336);
+            label1.Name = "label1";
+            label1.Size = new Size(1151, 65);
+            label1.TabIndex = 4;
+            label1.Text = "Sistem Informasi Stok Bahan Bakso Njedir Jember";
+            label1.Click += label1_Click_1;
+            // 
             // Form_Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1330, 700);
+            Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button1);
@@ -85,5 +100,6 @@
         private Button button1;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Label label1;
     }
 }

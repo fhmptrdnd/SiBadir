@@ -9,6 +9,22 @@ namespace SiBadir.Repositories
 {
     public class BahanRepository : IBahanRepository
     {
+        public Bahan Bahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal IBahanRepository IBahanRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public int Add(Bahan b) => DatabaseRepository.Insert("bahan",
                 new[] { "nama_bahan", "satuan_bahan", "stok_bahan", "id_kategori", "is_active" },
                 new object[] { b.NamaBahan, b.SatuanBahan, b.StokBahan, b.IdKategori, b.IsActive }, true);

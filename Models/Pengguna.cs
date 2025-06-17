@@ -15,5 +15,45 @@ namespace SiBadir.Model
         public string Username { get; set; }
         public string Password { get; set; }
         public int? IsActive { get; set; }
+
+        public Repositories.PenggunaRepository PenggunaRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormMenuKaryawan FormMenuKaryawan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormStokBahan FormStokBahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public View.TambahKaryawan TambahKaryawan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Form_Login Form_Login
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

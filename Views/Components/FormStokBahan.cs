@@ -53,6 +53,22 @@ namespace SiBadir
             btnHapusBahan.Click += btnHapusBahan_Click;
         }
 
+        public Bahan Bahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void LoadData()
         {
             List<Bahan> daftarBahan = StokBahanController.GetDataStokBahan();

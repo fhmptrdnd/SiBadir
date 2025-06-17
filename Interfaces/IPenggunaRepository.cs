@@ -10,6 +10,8 @@ namespace SiBadir.Interfaces
 {
     internal interface IPenggunaRepository
     {
+        Pengguna Pengguna { get; set; }
+
         int Insert(Pengguna user);
         bool Update(Pengguna user, bool new_data = false);
         void Delete(int idUser);

@@ -12,6 +12,22 @@ namespace SiBadir
             InitializeComponent();
         }
 
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Form_Menu Form_Menu
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string usernameInput = textBox2.Text.Trim().ToLower();
@@ -58,6 +74,11 @@ namespace SiBadir
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -27,6 +27,14 @@ namespace SiBadir
             InitializeComponent();
         }
 
+        public FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 

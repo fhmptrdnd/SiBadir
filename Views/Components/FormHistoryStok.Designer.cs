@@ -122,7 +122,7 @@
             // 
             // FormHistoryStok
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.IndianRed;
             ClientSize = new Size(1155, 705);

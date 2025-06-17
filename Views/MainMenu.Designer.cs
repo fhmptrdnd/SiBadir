@@ -84,7 +84,7 @@
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1330, 700);
             Controls.Add(mainContainer);

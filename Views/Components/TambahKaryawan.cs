@@ -36,6 +36,22 @@ namespace SiBadir.View
             AlamatKaryawanTextBox.Text = karyawan?.AlamatUser;
         }
 
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public MenuKaryawanController MenuKaryawanController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Return_Button_Click(object sender, EventArgs e)
         {
             this.Close();
