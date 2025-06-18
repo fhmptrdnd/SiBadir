@@ -12,14 +12,11 @@ Projek ini akan membantu pendataan stok bahan-bahan yang digunakan selama hari k
 2. Manajamen bahan:
 	Di mana nanti bahan dicatat oleh Admin dengan rincian nama bahan, satuan, jumlah, harga per satuannya, tanggal belanja, asal pembelian, dan kategori kesegaran bahan: segar, beku, kering. Kemudian karyawan mencatat nama bahan, jumlah bahan dipakai, dan tanggal penggunaannya.
 
-3. Selisih harian:
-	Sistem akan menghitung selisih bahan berdasarkan data bahan masuk dikurangi data bahan keluar dan dapat dilihat berdasarkan tanggal tertentu.
-
-4. Notifikasi:
+3. Notifikasi:
 	Sistem akan memberi notifikasi peringatan bahan sisa sedikit apabila jumlah stok bahan menyentuh angka tertentu.
 
-5. Riwayat Pengguna:
+4. Riwayat Pengguna:
 	Ada pencatatan aktivitas pengguna berupa id pengguna (admin/karyawan), tipe aktivitas (input bahan masuk, input bahan keluar), serta waktu dan tanggal aktivitas user tsb. Recananya dapat ditampilkan dalam bentuk riwayat tabel.
 
-6. Laporan bahan dan filter: 
+5. Laporan bahan dan filter: 
 	Laporan stok bahan saat ini bisa difilter berdasarkan tanggal, nama bahan, kategori kessegaran, dan sumber pembeliannya. Namun tidak menampilkan laporan pengeluaran karena fokus e manajemen inventori bahan saja.
