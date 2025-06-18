@@ -45,8 +45,6 @@
         <Point X="18.019" Y="9.531" />
         <Point X="19.76" Y="9.531" Type="JumpStart" />
         <Point X="19.927" Y="9.531" Type="JumpEnd" />
-        <Point X="20.542" Y="9.531" Type="JumpStart" />
-        <Point X="20.708" Y="9.531" Type="JumpEnd" />
         <Point X="22.5" Y="9.531" />
       </Path>
     </AssociationLine>
@@ -79,37 +77,9 @@
   </Class>
   <Class Name="SiBadir.Form_Menu" Collapsed="true">
     <Position X="19.75" Y="10.75" Width="1.5" />
-    <AssociationLine Name="FormController" Type="SiBadir.Controller.FormController" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="21.25" Y="11.188" />
-        <Point X="22.938" Y="11.188" />
-        <Point X="22.938" Y="9.812" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="NotifikasiController" Type="SiBadir.Controllers.NotifikasiController" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="20.688" Y="11.441" />
-        <Point X="20.688" Y="15.617" />
-        <Point X="14" Y="15.617" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="FormHistoryStok" Type="SiBadir.Views.Components.FormHistoryStok" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="20.312" Y="11.441" />
-        <Point X="20.312" Y="13.469" />
-        <Point X="19.5" Y="13.469" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>gAACIAQAACgAAhCCQQSAAQACIAAABEBAAAAgASABAAk=</HashCode>
-      <FileName>Views\Form_Menu.cs</FileName>
+      <HashCode>gAACIAAAACAAAhAAAQCAAAACAAAAAABAAAAgAQAAAAA=</HashCode>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="FormController" />
-      <Property Name="NotifikasiController" />
-      <Property Name="FormMenuKaryawan" />
-      <Property Name="FormHistoryStok" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="SiBadir.MainMenu" Collapsed="true">
     <Position X="24.75" Y="9.25" Width="1.5" />
@@ -170,7 +140,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="SiBadir.Controllers.MenuHistoryController" Collapsed="true">
-    <Position X="13" Y="13.5" Width="1.5" />
+    <Position X="14.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAQAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Controllers\MenuHistoryController.cs</FileName>
@@ -332,53 +302,15 @@
   </Class>
   <Class Name="SiBadir.Views.Components.BaseMenuHistory" Collapsed="true">
     <Position X="13" Y="12.25" Width="1.5" />
-    <AssociationLine Name="MenuHistoryController" Type="SiBadir.Controllers.MenuHistoryController" ManuallyRouted="true" FixedFromPoint="true">
-      <Path>
-        <Point X="13.875" Y="12.941" />
-        <Point X="13.875" Y="13.5" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="HistoryStokBahan" Type="SiBadir.Model.HistoryStokBahan" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="14.5" Y="12.875" />
-        <Point X="15.25" Y="12.875" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>gAMAAAAAACCAABQwAAKAAAISAAAAAAAhAAEBAAAAEAI=</HashCode>
-      <FileName>Views\Components\BaseMenuHistory.cs</FileName>
+      <HashCode>gAEAAAAAACCAABAgAAKAAAASAAAAAAABAAEAAAAAEAI=</HashCode>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="MenuHistoryController" />
-      <Property Name="HistoryStokBahan" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="SiBadir.Views.Components.FormHistoryStok" Collapsed="true">
     <Position X="18" Y="13.25" Width="1.5" />
-    <AssociationLine Name="FormController" Type="SiBadir.Controller.FormController" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="19.5" Y="13.75" />
-        <Point X="20.604" Y="13.75" Type="JumpStart" />
-        <Point X="20.771" Y="13.75" Type="JumpEnd" />
-        <Point X="23.375" Y="13.75" />
-        <Point X="23.375" Y="9.812" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="MenuHistoryController" Type="SiBadir.Controllers.MenuHistoryController" FixedFromPoint="true">
-      <Path>
-        <Point X="18" Y="13.75" />
-        <Point X="14.5" Y="13.75" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>EAAADAAgACBQAAQSAACAABYCAAAAFAAAAAAAIAAEgAA=</HashCode>
-      <FileName>Views\Components\FormHistoryStok.cs</FileName>
+      <HashCode>EAAADAAgACBAAAAAAACAABQCAAAAFAAAAAAAAAAEAAA=</HashCode>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="FormController" />
-      <Property Name="MenuHistoryController" />
-      <Property Name="HistoryStokBahan" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="SiBadir.Views.Components.FormNotifikasi" Collapsed="true">
     <Position X="10.75" Y="16.25" Width="1.5" />
@@ -404,8 +336,8 @@
         <Point X="10.75" Y="8.691" />
         <Point X="10.75" Y="10.371" />
         <Point X="13.626" Y="10.371" />
-        <Point X="13.626" Y="13.781" />
-        <Point X="13" Y="13.781" />
+        <Point X="13.626" Y="14.031" />
+        <Point X="14.25" Y="14.031" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -419,29 +351,9 @@
   </Class>
   <Class Name="SiBadir.View.TambahKaryawan" Collapsed="true">
     <Position X="24.25" Y="7" Width="1.5" />
-    <AssociationLine Name="Pengguna" Type="SiBadir.Model.Pengguna" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="24.5" Y="7" />
-        <Point X="24.5" Y="5.562" />
-        <Point X="24.5" Y="5.562" />
-        <Point X="24.5" Y="5.203" />
-        <Point X="23.5" Y="5.203" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="MenuKaryawanController" Type="SiBadir.Controllers.MenuKaryawanController" FixedFromPoint="true">
-      <Path>
-        <Point X="24.25" Y="7.375" />
-        <Point X="23.5" Y="7.375" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>gCAAABQAASDAABQAAACAACACEAAAAAAEAAAAAEAAAAg=</HashCode>
-      <FileName>Views\Components\TambahKaryawan.cs</FileName>
+      <HashCode>gAAAAAAAACCAABQAAACAACACAAAAAAAEAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Pengguna" />
-      <Property Name="MenuKaryawanController" />
-    </ShowAsAssociation>
   </Class>
   <Interface Name="SiBadir.Interfaces.IBahanRepository" Collapsed="true">
     <Position X="7.75" Y="9.5" Width="1.5" />
