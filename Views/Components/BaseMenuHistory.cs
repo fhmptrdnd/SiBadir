@@ -54,5 +54,21 @@ namespace SiBadir.Views.Components
             List<HistoryStokBahan> data = MenuHistoryController.GetDataHistory();
             SearchCompleted?.Invoke(data);
         }
+
+        public MenuHistoryController MenuHistoryController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public HistoryStokBahan HistoryStokBahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

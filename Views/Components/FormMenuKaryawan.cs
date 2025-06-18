@@ -167,5 +167,29 @@ namespace SiBadir
                 //MessageBox.Show("Pilih 1 Data Karyawan Untuk Dihapus", "Info", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Controller.FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public MenuKaryawanController MenuKaryawanController
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

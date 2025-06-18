@@ -9,6 +9,22 @@ namespace SiBadir.Repositories
 {
     public class PenggunaRepository : IPenggunaRepository
     {
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal IPenggunaRepository IPenggunaRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public int Insert(Pengguna user)
         {
             int newId = 0;

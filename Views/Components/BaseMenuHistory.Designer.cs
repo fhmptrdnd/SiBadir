@@ -50,7 +50,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(354, 9);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(397, 39);
+            labelMenu.Size = new Size(464, 45);
             labelMenu.TabIndex = 6;
             labelMenu.Text = "Menu History Stok Bahan";
             // 
@@ -58,14 +58,14 @@
             // 
             SearchNamaBahan.Location = new Point(215, 82);
             SearchNamaBahan.Name = "SearchNamaBahan";
-            SearchNamaBahan.Size = new Size(227, 27);
+            SearchNamaBahan.Size = new Size(213, 31);
             SearchNamaBahan.TabIndex = 7;
             // 
             // SearchNamaUser
             // 
             SearchNamaUser.Location = new Point(215, 127);
             SearchNamaUser.Name = "SearchNamaUser";
-            SearchNamaUser.Size = new Size(227, 27);
+            SearchNamaUser.Size = new Size(213, 31);
             SearchNamaUser.TabIndex = 8;
             // 
             // SearchTanggal
@@ -75,7 +75,7 @@
             SearchTanggal.MaxDate = new DateTime(2025, 6, 9, 0, 0, 0, 0);
             SearchTanggal.Name = "SearchTanggal";
             SearchTanggal.ShowCheckBox = true;
-            SearchTanggal.Size = new Size(294, 27);
+            SearchTanggal.Size = new Size(294, 31);
             SearchTanggal.TabIndex = 9;
             SearchTanggal.Value = new DateTime(2025, 6, 9, 0, 0, 0, 0);
             // 
@@ -84,7 +84,7 @@
             SearchKategori.FormattingEnabled = true;
             SearchKategori.Location = new Point(583, 126);
             SearchKategori.Name = "SearchKategori";
-            SearchKategori.Size = new Size(137, 28);
+            SearchKategori.Size = new Size(111, 33);
             SearchKategori.TabIndex = 10;
             SearchKategori.Text = "Semua";
             // 
@@ -94,7 +94,7 @@
             SearchJenisPerubahan.Items.AddRange(new object[] { "Semua", "Penambahan", "Pengurangan", "Perubahan Data Bahan" });
             SearchJenisPerubahan.Location = new Point(852, 127);
             SearchJenisPerubahan.Name = "SearchJenisPerubahan";
-            SearchJenisPerubahan.Size = new Size(137, 28);
+            SearchJenisPerubahan.Size = new Size(137, 33);
             SearchJenisPerubahan.TabIndex = 11;
             SearchJenisPerubahan.Text = "Semua";
             // 
@@ -112,9 +112,9 @@
             // 
             NamaBahanLabel.AutoSize = true;
             NamaBahanLabel.ForeColor = Color.White;
-            NamaBahanLabel.Location = new Point(108, 85);
+            NamaBahanLabel.Location = new Point(82, 84);
             NamaBahanLabel.Name = "NamaBahanLabel";
-            NamaBahanLabel.Size = new Size(101, 20);
+            NamaBahanLabel.Size = new Size(121, 25);
             NamaBahanLabel.TabIndex = 13;
             NamaBahanLabel.Text = "Nama Bahan :";
             // 
@@ -122,9 +122,9 @@
             // 
             NamaUserLabel.AutoSize = true;
             NamaUserLabel.ForeColor = Color.White;
-            NamaUserLabel.Location = new Point(108, 130);
+            NamaUserLabel.Location = new Point(82, 129);
             NamaUserLabel.Name = "NamaUserLabel";
-            NamaUserLabel.Size = new Size(89, 20);
+            NamaUserLabel.Size = new Size(108, 25);
             NamaUserLabel.TabIndex = 14;
             NamaUserLabel.Text = "Nama User :";
             // 
@@ -132,9 +132,9 @@
             // 
             TanggalPerubahanLabel.AutoSize = true;
             TanggalPerubahanLabel.ForeColor = Color.White;
-            TanggalPerubahanLabel.Location = new Point(460, 85);
+            TanggalPerubahanLabel.Location = new Point(434, 84);
             TanggalPerubahanLabel.Name = "TanggalPerubahanLabel";
-            TanggalPerubahanLabel.Size = new Size(141, 20);
+            TanggalPerubahanLabel.Size = new Size(170, 25);
             TanggalPerubahanLabel.TabIndex = 15;
             TanggalPerubahanLabel.Text = "Tanggal Perubahan :";
             // 
@@ -142,9 +142,9 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(460, 130);
+            label1.Location = new Point(434, 129);
             label1.Name = "label1";
-            label1.Size = new Size(117, 20);
+            label1.Size = new Size(139, 25);
             label1.TabIndex = 16;
             label1.Text = "Nama Kategori :";
             // 
@@ -152,9 +152,9 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(726, 130);
+            label2.Location = new Point(700, 129);
             label2.Name = "label2";
-            label2.Size = new Size(120, 20);
+            label2.Size = new Size(146, 25);
             label2.TabIndex = 17;
             label2.Text = "Jenis Perubahan :";
             // 
@@ -170,7 +170,7 @@
             // 
             // BaseMenuHistory
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.IndianRed;
             ClientSize = new Size(1084, 235);

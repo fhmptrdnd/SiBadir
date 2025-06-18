@@ -11,6 +11,15 @@ namespace SiBadir.Controllers
     public class NotifikasiController
     {
         private static NotifikasiRepository repo = new();
+
+        public NotifikasiStok NotifikasiStok
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static void cekNotifikasi(Button button)
         {
             int cek = repo.cekNotifikasi(User.UserLoggedIn.IdUser);

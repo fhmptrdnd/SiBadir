@@ -12,6 +12,22 @@ namespace SiBadir.Repositories
 {
     internal class HistoryRepository : IHistoryRepository
     {
+        internal IHistoryRepository IHistoryRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public HistoryStokBahan HistoryStokBahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public HistoryStokBahan RowToHistory(DataRow row)
         {
             return new HistoryStokBahan

@@ -14,6 +14,15 @@ namespace SiBadir.Views.Components
     public partial class FormNotifikasi : Form
     {
         BindingSource binding = new BindingSource();
+
+        public NotifikasiController NotifikasiController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void LoadData()
         {
             binding.DataSource = NotifikasiController.GetAll();

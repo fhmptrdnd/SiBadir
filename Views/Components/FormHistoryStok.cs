@@ -41,5 +41,29 @@ namespace SiBadir.Views.Components
         {
 
         }
+
+        public FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public MenuHistoryController MenuHistoryController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public HistoryStokBahan HistoryStokBahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

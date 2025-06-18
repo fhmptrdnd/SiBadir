@@ -10,6 +10,8 @@ namespace SiBadir.Interfaces
 {
     internal interface IHistoryRepository
     {
+        HistoryStokBahan HistoryStokBahan { get; set; }
+
         HistoryStokBahan RowToHistory(DataRow row);
         List<HistoryStokBahan> GetAll(string? nama_bahan, DateTime? tanggal_perubahan, string? nama_kategori, string? jenis_perubahan, string? nama_user);
     }

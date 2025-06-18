@@ -13,6 +13,14 @@ namespace SiBadir.Repositories
 {
     public class NotifikasiRepository : INotifikasiRepository
     {
+        public NotifikasiStok NotifikasiStok
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public List<NotifikasiStok> GetAll(int id_pengguna)
         {
             string query = """

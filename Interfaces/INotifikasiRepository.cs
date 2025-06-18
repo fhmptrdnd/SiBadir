@@ -10,6 +10,7 @@ namespace SiBadir.Interfaces
 {
     internal interface INotifikasiRepository
     {
+
         List<NotifikasiStok> GetAll(int id_pengguna);
         int cekNotifikasi(int id_pengguna);
         NotifikasiStok RowToNotifikasi(DataRow row);

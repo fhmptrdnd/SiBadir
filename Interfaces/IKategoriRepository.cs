@@ -8,6 +8,7 @@ namespace SiBadir.Interfaces
 {
     internal interface IKategoriRepository
     {
+
         List<string> GetNamaKategori();
     }
 }
