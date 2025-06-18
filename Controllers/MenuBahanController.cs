@@ -12,6 +12,30 @@ namespace SiBadir.Controllers
             private static HistoryRepository _historyRepo = new ();
             private static NotifikasiRepository _notifikasiRepo = new();
 
+        public Bahan Bahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public NotifikasiStok NotifikasiStok
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public HistoryStokBahan HistoryStokBahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         // Metode untuk mendapatkan data stok bahan beserta nama kategori untuk tampilan DataGridView
         public static List<Bahan> GetDataStokBahan()
             {

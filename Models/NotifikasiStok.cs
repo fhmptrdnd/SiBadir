@@ -16,5 +16,13 @@ namespace SiBadir.Model
         public string Pesan { get; set; }
         public int? IsRead { get; set; }
         public DateTime TanggalNotifikasi { get; set; }
+
+        internal Interfaces.INotifikasiRepository INotifikasiRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

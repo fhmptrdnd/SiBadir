@@ -10,6 +10,14 @@ namespace SiBadir.Repositories
 {
     internal class KategoriRepository : Interfaces.IKategoriRepository
     {
+        internal Interfaces.IKategoriRepository IKategoriRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public List<string> GetNamaKategori()
         {
             var dt = DatabaseRepository.Select("SELECT * FROM kategori_bahan");

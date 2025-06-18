@@ -53,6 +53,22 @@ namespace SiBadir
             btnHapusBahan.Click += btnHapusBahan_Click;
         }
 
+        public Bahan Bahan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void LoadData()
         {
             List<Bahan> daftarBahan = StokBahanController.GetDataStokBahan();
@@ -181,6 +197,16 @@ namespace SiBadir
             {
                 MessageBox.Show("Pilih bahan yang ingin dihapus.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnEditBahan_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelMenu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

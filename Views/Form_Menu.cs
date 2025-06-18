@@ -12,6 +12,7 @@ using SiBadir;
 using SiBadir.View;
 using SiBadir.Views.Components;
 using SiBadir.Controllers;
+using SiBadir.Model;
 
 namespace SiBadir
 {
@@ -25,6 +26,16 @@ namespace SiBadir
         {
             InitializeComponent();
             NotifikasiController.cekNotifikasi(NotifikasiBtn);
+            string role = User.UserLoggedIn.Role;
+
+            if (role == "karyawan")
+            {
+                label1.Text = "Employee Ver.";
+            }
+            else
+            {
+                label1.Text = "Admin Ver.";
+            }
         }
         private void BtnKeluar_click(object sender, EventArgs e)
         {
@@ -33,7 +44,7 @@ namespace SiBadir
 
         private void bt_Lht_Stok_Bahan_Click(object sender, EventArgs e)
         {
-            FormStokBahan formStokBahan = new ();
+            FormStokBahan formStokBahan = new();
             SiBadir.Controller.FormController.LoadFormInPanel(this.panel1, formStokBahan);
             formStokBahan.StokChanged += CekNotifikasi;
         }
@@ -65,6 +76,48 @@ namespace SiBadir
         {
             SiBadir.Controller.FormController.LoadFormInPanel(this.panel1, new FormNotifikasi());
             NotifikasiBtn.Text = "Notifikasi";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pilih_Menu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public FormController FormController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public NotifikasiController NotifikasiController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormMenuKaryawan FormMenuKaryawan
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public FormHistoryStok FormHistoryStok
+        {
+            get => default;
+            set
+            {
+            }
         }
     }
 }

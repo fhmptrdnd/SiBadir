@@ -12,7 +12,23 @@ namespace SiBadir
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Form_Menu Form_Menu
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             string usernameInput = textBox2.Text.Trim().ToLower();
             string passwordInput = textBox1.Text.Trim();
@@ -61,5 +77,12 @@ namespace SiBadir
         {
 
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

@@ -11,6 +11,15 @@ namespace SiBadir.Controllers
     public class MenuKaryawanController
     {
         private static PenggunaRepository repo = new();
+
+        public Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static List<Pengguna> GetDataKaryawan()
         {
             List<Pengguna> data = repo.GetAll();

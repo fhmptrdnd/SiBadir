@@ -9,5 +9,13 @@ namespace SiBadir.Model
     public static class User
     {
         public static Pengguna UserLoggedIn { get; set; }
+
+        public static Pengguna Pengguna
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

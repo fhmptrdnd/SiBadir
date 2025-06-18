@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SiBadir.FormMenuKaryawan" Collapsed="true">
+    <Position X="20" Y="8.25" Width="1.5" />
+    <AssociationLine Name="FormController" Type="SiBadir.Controller.FormController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.5" Y="8.75" />
+        <Point X="23.5" Y="8.75" />
+        <Point X="23.5" Y="9.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MenuKaryawanController" Type="SiBadir.Controllers.MenuKaryawanController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.188" Y="8.25" />
+        <Point X="21.188" Y="7.25" />
+        <Point X="22" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gBEAAQAhACAQAAACEACAQAACAEACAAIIBASAIEAAAAg=</HashCode>
+      <FileName>Views\Components\FormMenuKaryawan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pengguna" />
+      <Property Name="FormController" />
+      <Property Name="MenuKaryawanController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.FormStokBahan" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <AssociationLine Name="Bahan" Type="SiBadir.Model.Bahan" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="4.438" />
+        <Point X="14.625" Y="4.438" />
+        <Point X="14.625" Y="4.445" />
+        <Point X="11.359" Y="4.445" />
+        <Point X="11.359" Y="6.244" />
+        <Point X="9.75" Y="6.244" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FormController" Type="SiBadir.Controller.FormController" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="4.25" />
+        <Point X="18.019" Y="4.25" />
+        <Point X="18.019" Y="9.531" />
+        <Point X="19.76" Y="9.531" Type="JumpStart" />
+        <Point X="19.927" Y="9.531" Type="JumpEnd" />
+        <Point X="22.5" Y="9.531" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAEAAQgAEiAQAAACAACQAAACAEAAgACABAUAIAAAABA=</HashCode>
+      <FileName>Views\Components\FormStokBahan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bahan" />
+      <Property Name="FormController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Form_Login" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <AssociationLine Name="Pengguna" Type="SiBadir.Model.Pengguna" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21" Y="3.875" />
+        <Point X="22.594" Y="3.875" />
+        <Point X="22.594" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAACAAABAAAACACAASAAAMAAQAEEAAAEAAAAA=</HashCode>
+      <FileName>Views\Form_Login.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pengguna" />
+      <Property Name="Form_Menu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Form_Menu" Collapsed="true">
+    <Position X="19.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACIAAAACAAAhAAAQCAAAACAAAAAABAAAAgAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.MainMenu" Collapsed="true">
+    <Position X="24.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAEAACAACAAAgCAAAYAAACAEQAAAAAAAA=</HashCode>
+      <FileName>Views\MainMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FormController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Program" Collapsed="true">
+    <Position X="3.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Properties.Resources" Collapsed="true">
+    <Position X="5.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Controller.FormController" Collapsed="true">
+    <Position X="22.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Controllers\FormController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Controllers.StokBahanController" Collapsed="true">
+    <Position X="10.25" Y="10.75" Width="1.5" />
+    <AssociationLine Name="Bahan" Type="SiBadir.Model.Bahan" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="11.062" />
+        <Point X="9.562" Y="11.062" />
+        <Point X="9.562" Y="6.691" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="HistoryStokBahan" Type="SiBadir.Model.HistoryStokBahan" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="11.062" />
+        <Point X="13.543" Y="11.062" Type="JumpStart" />
+        <Point X="13.709" Y="11.062" Type="JumpEnd" />
+        <Point X="15.5" Y="11.062" />
+        <Point X="15.5" Y="12.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>FEAAAEIAAAAAAQAAAAAAAAIAAAAAAAAABAEAAAAABgA=</HashCode>
+      <FileName>Controllers\MenuBahanController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bahan" />
+      <Property Name="NotifikasiStok" />
+      <Property Name="HistoryStokBahan" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Controllers.MenuHistoryController" Collapsed="true">
+    <Position X="14.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAQAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\MenuHistoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Controllers.MenuKaryawanController" Collapsed="true">
+    <Position X="22" Y="7" Width="1.5" />
+    <AssociationLine Name="Pengguna" Type="SiBadir.Model.Pengguna" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.625" Y="7" />
+        <Point X="22.578" Y="7" />
+        <Point X="22.578" Y="5.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAEAABAAAAAAAAEAAAAAAEAIAAA=</HashCode>
+      <FileName>Controllers\MenuKaryawanController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pengguna" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Controllers.NotifikasiController" Collapsed="true">
+    <Position X="12.5" Y="15.25" Width="1.5" />
+    <AssociationLine Name="NotifikasiStok" Type="SiBadir.Model.NotifikasiStok" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="15.5" />
+        <Point X="11.5" Y="15.5" />
+        <Point X="11.5" Y="14.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAEgAAAAAAAAAAAAAiAAAAAAAAA=</HashCode>
+      <FileName>Controllers\NotifikasiController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NotifikasiStok" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Controllers.PasswordGenerator" Collapsed="true">
+    <Position X="5.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Controllers\PasswordGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Model.Bahan" Collapsed="true">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAgA=</HashCode>
+      <FileName>Models\Bahan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Model.HistoryStokBahan" Collapsed="true">
+    <Position X="15.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACAAgCABAAAAAAAAAABQAAAAAEAAAAAABAAAEAAA=</HashCode>
+      <FileName>Models\HistoryStokBahan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Model.KategoriBahan" Collapsed="true">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\KategoriBahan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Model.NotifikasiStok" Collapsed="true">
+    <Position X="10.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAEAAAAAQAAAEAAAAAAAQAAAAIABAAAAAAA=</HashCode>
+      <FileName>Models\NotifikasiStok.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="INotifikasiRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Model.Pengguna" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAiAQAAACAEQoAAAQAAQAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pengguna.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Model.User" Collapsed="true">
+    <Position X="24.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pengguna" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.Repositories.BahanRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEAAAAAAgEAAAAAAIA=</HashCode>
+      <FileName>Repositories\BahanRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bahan" />
+      <Property Name="IBahanRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SiBadir.Repositories.DatabaseRepository" Collapsed="true">
+    <Position X="3.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAQAAAAAA=</HashCode>
+      <FileName>Repositories\DatabaseRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Repositories.HistoryRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAIIAAAAACAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Repositories\HistoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IHistoryRepository" />
+      <Property Name="HistoryStokBahan" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SiBadir.Repositories.KategoriRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\KategoriRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IKategoriRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SiBadir.Repositories.NotifikasiRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAgAAAAAAAEAAAAAiAAgAAAAAA=</HashCode>
+      <FileName>Repositories\NotifikasiRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NotifikasiStok" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SiBadir.Repositories.PenggunaRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAgAAAAEAAAEAAAAAAgAAAEAEAAA=</HashCode>
+      <FileName>Repositories\PenggunaRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pengguna" />
+      <Property Name="IPenggunaRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SiBadir.Views.Components.BaseMenuHistory" Collapsed="true">
+    <Position X="13" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAACCAABAgAAKAAAASAAAAAAABAAEAAAAAEAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Views.Components.FormHistoryStok" Collapsed="true">
+    <Position X="18" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAADAAgACBAAAAAAACAABQCAAAAFAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SiBadir.Views.Components.FormNotifikasi" Collapsed="true">
+    <Position X="10.75" Y="16.25" Width="1.5" />
+    <AssociationLine Name="NotifikasiController" Type="SiBadir.Controllers.NotifikasiController" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="16.625" />
+        <Point X="12.875" Y="16.625" />
+        <Point X="12.875" Y="15.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQCAQEAAAQACAAAACAAAAAAAAAAAAIAABAgA=</HashCode>
+      <FileName>Views\Components\FormNotifikasi.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NotifikasiController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.View.FormAddEditBahan" Collapsed="true">
+    <Position X="10" Y="8" Width="1.5" />
+    <AssociationLine Name="MenuHistoryController" Type="SiBadir.Controllers.MenuHistoryController" ManuallyRouted="true">
+      <Path>
+        <Point X="10.75" Y="8.691" />
+        <Point X="10.75" Y="10.371" />
+        <Point X="13.626" Y="10.371" />
+        <Point X="13.626" Y="14.031" />
+        <Point X="14.25" Y="14.031" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAQAAAyBAABQAAACgAGACEQAAAAAEAgEAIAAEAAA=</HashCode>
+      <FileName>Views\Components\FormAddEditBahan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bahan" />
+      <Property Name="MenuHistoryController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SiBadir.View.TambahKaryawan" Collapsed="true">
+    <Position X="24.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAACCAABQAAACAACACAAAAAAAEAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SiBadir.Interfaces.IBahanRepository" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IBahanRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SiBadir.Interfaces.IHistoryRepository" Collapsed="true">
+    <Position X="18" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHistoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="HistoryStokBahan" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="SiBadir.Interfaces.IKategoriRepository" Collapsed="true">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IKategoriRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SiBadir.Interfaces.INotifikasiRepository" Collapsed="true">
+    <Position X="8.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAAiAAgAAAAAA=</HashCode>
+      <FileName>Interfaces\INotifikasiRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SiBadir.Interfaces.IPenggunaRepository" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAgAAAAAAAAEAAAAAAgAAAEAEAAA=</HashCode>
+      <FileName>Interfaces\IPenggunaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
